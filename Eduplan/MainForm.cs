@@ -22,7 +22,17 @@ namespace Eduplan
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void LessonButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DiagonismataButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BathmoiButton_Click(object sender, EventArgs e)
         {
 
         }

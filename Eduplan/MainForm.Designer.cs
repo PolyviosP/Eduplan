@@ -36,7 +36,7 @@ namespace Eduplan
             this.Label = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pythonPanel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@ namespace Eduplan
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.TopPanel.SuspendLayout();
             this.flowLayoutPanel.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pythonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -123,30 +123,30 @@ namespace Eduplan
             // flowLayoutPanel
             // 
             this.flowLayoutPanel.AutoScroll = true;
-            this.flowLayoutPanel.Controls.Add(this.panel2);
+            this.flowLayoutPanel.Controls.Add(this.pythonPanel);
             this.flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel.Location = new System.Drawing.Point(266, 79);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
             this.flowLayoutPanel.Size = new System.Drawing.Size(1160, 662);
             this.flowLayoutPanel.TabIndex = 2;
             // 
-            // panel2
+            // pythonPanel
             // 
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.linkLabel);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1119, 4160);
-            this.panel2.TabIndex = 0;
+            this.pythonPanel.Controls.Add(this.label7);
+            this.pythonPanel.Controls.Add(this.pictureBox3);
+            this.pythonPanel.Controls.Add(this.label6);
+            this.pythonPanel.Controls.Add(this.pictureBox2);
+            this.pythonPanel.Controls.Add(this.label5);
+            this.pythonPanel.Controls.Add(this.pictureBox1);
+            this.pythonPanel.Controls.Add(this.label4);
+            this.pythonPanel.Controls.Add(this.label3);
+            this.pythonPanel.Controls.Add(this.label2);
+            this.pythonPanel.Controls.Add(this.linkLabel);
+            this.pythonPanel.Controls.Add(this.label1);
+            this.pythonPanel.Location = new System.Drawing.Point(3, 3);
+            this.pythonPanel.Name = "pythonPanel";
+            this.pythonPanel.Size = new System.Drawing.Size(1119, 4160);
+            this.pythonPanel.TabIndex = 0;
             // 
             // label7
             // 
@@ -211,7 +211,7 @@ namespace Eduplan
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(28, 2009);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1394, 312);
+            this.label5.Size = new System.Drawing.Size(1007, 312);
             this.label5.TabIndex = 8;
             this.label5.Text = resources.GetString("label5.Text");
             // 
@@ -319,6 +319,7 @@ namespace Eduplan
             this.LessonButton.Text = "Μαθήματα";
             this.LessonButton.TextColor = System.Drawing.Color.White;
             this.LessonButton.UseVisualStyleBackColor = false;
+            this.LessonButton.Click += new System.EventHandler(this.LessonButton_Click);
             // 
             // DiagonismataButton
             // 
@@ -340,6 +341,7 @@ namespace Eduplan
             this.DiagonismataButton.Text = "Διαγωνίσματα";
             this.DiagonismataButton.TextColor = System.Drawing.Color.White;
             this.DiagonismataButton.UseVisualStyleBackColor = false;
+            this.DiagonismataButton.Click += new System.EventHandler(this.DiagonismataButton_Click);
             // 
             // BathmoiButton
             // 
@@ -361,6 +363,7 @@ namespace Eduplan
             this.BathmoiButton.Text = "Οι Βαθμοί μου";
             this.BathmoiButton.TextColor = System.Drawing.Color.White;
             this.BathmoiButton.UseVisualStyleBackColor = false;
+            this.BathmoiButton.Click += new System.EventHandler(this.BathmoiButton_Click);
             // 
             // MainForm
             // 
@@ -380,8 +383,8 @@ namespace Eduplan
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.flowLayoutPanel.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pythonPanel.ResumeLayout(false);
+            this.pythonPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -397,7 +400,7 @@ namespace Eduplan
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pythonPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel;
         private System.Windows.Forms.Label label2;
