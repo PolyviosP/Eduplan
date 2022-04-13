@@ -32,14 +32,14 @@ namespace Eduplan
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.BasicPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.GradesButton = new System.Windows.Forms.Button();
-            this.HomeworkButton = new System.Windows.Forms.Button();
-            this.LessonButton = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.Label = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,26 +48,26 @@ namespace Eduplan
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LessonButton = new ePOSOne.btnProduct.Button_WOC();
+            this.DiagonismataButton = new ePOSOne.btnProduct.Button_WOC();
+            this.BathmoiButton = new ePOSOne.btnProduct.Button_WOC();
             this.BasicPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.TopPanel.SuspendLayout();
             this.flowLayoutPanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // BasicPanel
             // 
             this.BasicPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BasicPanel.Controls.Add(this.panel1);
-            this.BasicPanel.Controls.Add(this.GradesButton);
-            this.BasicPanel.Controls.Add(this.HomeworkButton);
+            this.BasicPanel.Controls.Add(this.BathmoiButton);
+            this.BasicPanel.Controls.Add(this.DiagonismataButton);
             this.BasicPanel.Controls.Add(this.LessonButton);
+            this.BasicPanel.Controls.Add(this.panel1);
             this.BasicPanel.Controls.Add(this.pictureBox);
             this.BasicPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.BasicPanel.Location = new System.Drawing.Point(0, 0);
@@ -81,45 +81,6 @@ namespace Eduplan
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1151, 662);
             this.panel1.TabIndex = 2;
-            // 
-            // GradesButton
-            // 
-            this.GradesButton.BackColor = System.Drawing.Color.Salmon;
-            this.GradesButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GradesButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GradesButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GradesButton.Location = new System.Drawing.Point(0, 367);
-            this.GradesButton.Name = "GradesButton";
-            this.GradesButton.Size = new System.Drawing.Size(266, 79);
-            this.GradesButton.TabIndex = 6;
-            this.GradesButton.Text = "Οι βαθμοί μου";
-            this.GradesButton.UseVisualStyleBackColor = false;
-            // 
-            // HomeworkButton
-            // 
-            this.HomeworkButton.BackColor = System.Drawing.Color.Salmon;
-            this.HomeworkButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.HomeworkButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HomeworkButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.HomeworkButton.Location = new System.Drawing.Point(0, 294);
-            this.HomeworkButton.Name = "HomeworkButton";
-            this.HomeworkButton.Size = new System.Drawing.Size(266, 79);
-            this.HomeworkButton.TabIndex = 2;
-            this.HomeworkButton.Text = "Οι εργασίες μου";
-            this.HomeworkButton.UseVisualStyleBackColor = false;
-            // 
-            // LessonButton
-            // 
-            this.LessonButton.BackColor = System.Drawing.Color.Salmon;
-            this.LessonButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.LessonButton.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LessonButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LessonButton.Location = new System.Drawing.Point(0, 218);
-            this.LessonButton.Name = "LessonButton";
-            this.LessonButton.Size = new System.Drawing.Size(266, 79);
-            this.LessonButton.TabIndex = 1;
-            this.LessonButton.Text = "Μαθήματα";
-            this.LessonButton.UseVisualStyleBackColor = false;
             // 
             // pictureBox
             // 
@@ -187,6 +148,47 @@ namespace Eduplan
             this.panel2.Size = new System.Drawing.Size(1119, 4160);
             this.panel2.TabIndex = 0;
             // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(35, 3050);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(364, 156);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Μη αποδεκτά ονόματα μεταβλητών:\r\n\r\n- 1number - αρχίζει με αριθμό.\r\n- number! - πε" +
+    "ριέχει το !\r\n- class - είναι λέξη-κλειδί.\r\n\r\n";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(33, 2792);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(509, 225);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(28, 2565);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(806, 208);
+            this.label6.TabIndex = 10;
+            this.label6.Text = resources.GetString("label6.Text");
+            // 
             // pictureBox2
             // 
             this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
@@ -195,6 +197,7 @@ namespace Eduplan
             this.pictureBox2.Location = new System.Drawing.Point(33, 2343);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(323, 189);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
@@ -214,12 +217,16 @@ namespace Eduplan
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(33, 1507);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(808, 461);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -292,45 +299,68 @@ namespace Eduplan
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
             // 
-            // label6
+            // LessonButton
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(28, 2565);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(806, 208);
-            this.label6.TabIndex = 10;
-            this.label6.Text = resources.GetString("label6.Text");
+            this.LessonButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LessonButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LessonButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.Location = new System.Drawing.Point(3, 241);
+            this.LessonButton.Name = "LessonButton";
+            this.LessonButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LessonButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.LessonButton.Size = new System.Drawing.Size(260, 90);
+            this.LessonButton.TabIndex = 7;
+            this.LessonButton.Text = "Μαθήματα";
+            this.LessonButton.TextColor = System.Drawing.Color.White;
+            this.LessonButton.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // DiagonismataButton
             // 
-            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(33, 2792);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(323, 224);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
+            this.DiagonismataButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DiagonismataButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiagonismataButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.Location = new System.Drawing.Point(3, 337);
+            this.DiagonismataButton.Name = "DiagonismataButton";
+            this.DiagonismataButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DiagonismataButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.DiagonismataButton.Size = new System.Drawing.Size(260, 90);
+            this.DiagonismataButton.TabIndex = 8;
+            this.DiagonismataButton.Text = "Διαγωνίσματα";
+            this.DiagonismataButton.TextColor = System.Drawing.Color.White;
+            this.DiagonismataButton.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // BathmoiButton
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(35, 3050);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(364, 156);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Μη αποδεκτά ονόματα μεταβλητών:\r\n\r\n- 1number - αρχίζει με αριθμό.\r\n- number! - πε" +
-    "ριέχει το !\r\n- class - είναι λέξη-κλειδί.\r\n\r\n";
+            this.BathmoiButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BathmoiButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BathmoiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.Location = new System.Drawing.Point(3, 433);
+            this.BathmoiButton.Name = "BathmoiButton";
+            this.BathmoiButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BathmoiButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.BathmoiButton.Size = new System.Drawing.Size(260, 90);
+            this.BathmoiButton.TabIndex = 9;
+            this.BathmoiButton.Text = "Οι Βαθμοί μου";
+            this.BathmoiButton.TextColor = System.Drawing.Color.White;
+            this.BathmoiButton.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -352,9 +382,9 @@ namespace Eduplan
             this.flowLayoutPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -363,9 +393,6 @@ namespace Eduplan
 
         private System.Windows.Forms.Panel BasicPanel;
         private System.Windows.Forms.Label Label;
-        private System.Windows.Forms.Button GradesButton;
-        private System.Windows.Forms.Button HomeworkButton;
-        private System.Windows.Forms.Button LessonButton;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.Panel panel1;
@@ -382,6 +409,9 @@ namespace Eduplan
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
+        private ePOSOne.btnProduct.Button_WOC LessonButton;
+        private ePOSOne.btnProduct.Button_WOC BathmoiButton;
+        private ePOSOne.btnProduct.Button_WOC DiagonismataButton;
     }
 }
 
