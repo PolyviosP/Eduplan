@@ -12,6 +12,7 @@ namespace Eduplan
 {
     public partial class MainForm : Form
     {
+        TestForm testform = new TestForm();
         public MainForm()
         {
             InitializeComponent();
@@ -29,7 +30,10 @@ namespace Eduplan
 
         private void DiagonismataButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            testform.previous_main = this;
+            testform.Location = new Point(this.Location.X, this.Location.Y);
+            testform.Show();
         }
 
         private void BathmoiButton_Click(object sender, EventArgs e)
