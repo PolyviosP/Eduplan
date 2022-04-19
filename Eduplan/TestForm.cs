@@ -59,12 +59,36 @@ namespace Eduplan
 
         private void FinishButton_Click(object sender, EventArgs e)
         {
-            List<CheckedListBox> D1_Checkboxes = new List<CheckedListBox>() { checkedListBox1, checkedListBox2, checkedListBox3, checkedListBox4, checkedListBox5 };
+            List<CheckedListBox> D1_Checkboxes = new List<CheckedListBox>() { D1ListBox1, D1ListBox2, D1ListBox3, D1ListBox4, D1ListBox5 };
             List<string> D1 = new List<string>() { "Όχι", "Value", "bool", "50", "Όλα τα παραπάνω" };
 
-            int v = Functions.RefreshBoxes(D1_Checkboxes, D1);
-            Console.WriteLine(v);
+            int vath = Functions.RefreshBoxes(D1_Checkboxes, D1);
+            Console.WriteLine(vath);
             
+        }
+        private void FinishTest2Button_Click(object sender, EventArgs e)
+        {
+            List<CheckedListBox> D2_Checkboxes = new List<CheckedListBox>() {  };
+            List<string> D2 = new List<string>() {  };
+
+            int vath = Functions.RefreshBoxes(D2_Checkboxes, D2);
+            Console.WriteLine(vath);
+        }
+        private void FinishTest3Button_Click(object sender, EventArgs e)
+        {
+            List<CheckedListBox> D3_Checkboxes = new List<CheckedListBox>() {  };
+            List<string> D3 = new List<string>() {  };
+
+            int vath = Functions.RefreshBoxes(D3_Checkboxes, D3);
+            Console.WriteLine(vath);
+        }
+        private void FinishFinalTestButton_Click(object sender, EventArgs e)
+        {
+            List<CheckedListBox> DF_Checkboxes = new List<CheckedListBox>() {  };
+            List<string> DF = new List<string>() {  };
+
+            int vath = Functions.RefreshBoxes(DF_Checkboxes, DF);
+            Console.WriteLine(vath);
         }
         private void TestForm_FormClosing(object sender, FormClosingEventArgs e)
         {

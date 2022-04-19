@@ -40,37 +40,37 @@ namespace Eduplan
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Test1panel = new System.Windows.Forms.Panel();
-            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.D1ListBox5 = new System.Windows.Forms.CheckedListBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.D1ListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.D1ListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.D1ListBox2 = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.FinishButton = new ePOSOne.btnProduct.Button_WOC();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.D1ListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Test2panel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button_WOC1 = new ePOSOne.btnProduct.Button_WOC();
+            this.FinishTest2Button = new ePOSOne.btnProduct.Button_WOC();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Test3panel = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button_WOC2 = new ePOSOne.btnProduct.Button_WOC();
+            this.FinishTest3Button = new ePOSOne.btnProduct.Button_WOC();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.TestFinalpanel = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.button_WOC3 = new ePOSOne.btnProduct.Button_WOC();
+            this.FinishFinalTestButton = new ePOSOne.btnProduct.Button_WOC();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.BasicPanel.SuspendLayout();
@@ -242,16 +242,16 @@ namespace Eduplan
             // 
             // Test1panel
             // 
-            this.Test1panel.Controls.Add(this.checkedListBox5);
+            this.Test1panel.Controls.Add(this.D1ListBox5);
             this.Test1panel.Controls.Add(this.label11);
-            this.Test1panel.Controls.Add(this.checkedListBox4);
-            this.Test1panel.Controls.Add(this.checkedListBox3);
-            this.Test1panel.Controls.Add(this.checkedListBox2);
+            this.Test1panel.Controls.Add(this.D1ListBox4);
+            this.Test1panel.Controls.Add(this.D1ListBox3);
+            this.Test1panel.Controls.Add(this.D1ListBox2);
             this.Test1panel.Controls.Add(this.label5);
             this.Test1panel.Controls.Add(this.label3);
             this.Test1panel.Controls.Add(this.label1);
             this.Test1panel.Controls.Add(this.FinishButton);
-            this.Test1panel.Controls.Add(this.checkedListBox1);
+            this.Test1panel.Controls.Add(this.D1ListBox1);
             this.Test1panel.Controls.Add(this.label4);
             this.Test1panel.Controls.Add(this.label2);
             this.Test1panel.Location = new System.Drawing.Point(3, 3);
@@ -259,25 +259,25 @@ namespace Eduplan
             this.Test1panel.Size = new System.Drawing.Size(1092, 1729);
             this.Test1panel.TabIndex = 1;
             // 
-            // checkedListBox5
+            // D1ListBox5
             // 
-            this.checkedListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.checkedListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox5.CheckOnClick = true;
-            this.checkedListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.checkedListBox5.FormattingEnabled = true;
-            this.checkedListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.checkedListBox5.Items.AddRange(new object[] {
+            this.D1ListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D1ListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D1ListBox5.CheckOnClick = true;
+            this.D1ListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D1ListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D1ListBox5.FormattingEnabled = true;
+            this.D1ListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D1ListBox5.Items.AddRange(new object[] {
             "Γράμματα",
             "Αριθμόυς",
             "Κεφαλαίους χαρακτήρες",
             "Όλα τα παραπάνω"});
-            this.checkedListBox5.Location = new System.Drawing.Point(26, 1390);
-            this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(333, 136);
-            this.checkedListBox5.TabIndex = 17;
-            this.checkedListBox5.ThreeDCheckBoxes = true;
+            this.D1ListBox5.Location = new System.Drawing.Point(26, 1390);
+            this.D1ListBox5.Name = "D1ListBox5";
+            this.D1ListBox5.Size = new System.Drawing.Size(333, 136);
+            this.D1ListBox5.TabIndex = 17;
+            this.D1ListBox5.ThreeDCheckBoxes = true;
             // 
             // label11
             // 
@@ -293,65 +293,65 @@ namespace Eduplan
             this.label11.TabIndex = 16;
             this.label11.Text = "Ερώτηση 5\r\n \r\nΤα ονόματα των μεταβλητων μπορούν να περιέχουν:\r\n";
             // 
-            // checkedListBox4
+            // D1ListBox4
             // 
-            this.checkedListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.checkedListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox4.CheckOnClick = true;
-            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.checkedListBox4.Items.AddRange(new object[] {
+            this.D1ListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D1ListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D1ListBox4.CheckOnClick = true;
+            this.D1ListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D1ListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D1ListBox4.FormattingEnabled = true;
+            this.D1ListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D1ListBox4.Items.AddRange(new object[] {
             "30",
             "5",
             "500",
             "50"});
-            this.checkedListBox4.Location = new System.Drawing.Point(26, 1113);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(269, 136);
-            this.checkedListBox4.TabIndex = 15;
-            this.checkedListBox4.ThreeDCheckBoxes = true;
+            this.D1ListBox4.Location = new System.Drawing.Point(26, 1113);
+            this.D1ListBox4.Name = "D1ListBox4";
+            this.D1ListBox4.Size = new System.Drawing.Size(269, 136);
+            this.D1ListBox4.TabIndex = 15;
+            this.D1ListBox4.ThreeDCheckBoxes = true;
             // 
-            // checkedListBox3
+            // D1ListBox3
             // 
-            this.checkedListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.checkedListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox3.CheckOnClick = true;
-            this.checkedListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.D1ListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D1ListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D1ListBox3.CheckOnClick = true;
+            this.D1ListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D1ListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D1ListBox3.FormattingEnabled = true;
+            this.D1ListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D1ListBox3.Items.AddRange(new object[] {
             "int",
             "float",
             "bool",
             "NoneType"});
-            this.checkedListBox3.Location = new System.Drawing.Point(26, 773);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(269, 136);
-            this.checkedListBox3.TabIndex = 14;
-            this.checkedListBox3.ThreeDCheckBoxes = true;
+            this.D1ListBox3.Location = new System.Drawing.Point(26, 773);
+            this.D1ListBox3.Name = "D1ListBox3";
+            this.D1ListBox3.Size = new System.Drawing.Size(269, 136);
+            this.D1ListBox3.TabIndex = 14;
+            this.D1ListBox3.ThreeDCheckBoxes = true;
             // 
-            // checkedListBox2
+            // D1ListBox2
             // 
-            this.checkedListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox2.CheckOnClick = true;
-            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.D1ListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D1ListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D1ListBox2.CheckOnClick = true;
+            this.D1ListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D1ListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D1ListBox2.FormattingEnabled = true;
+            this.D1ListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D1ListBox2.Items.AddRange(new object[] {
             "A!",
             "1onoma",
             "Value",
             "print"});
-            this.checkedListBox2.Location = new System.Drawing.Point(26, 480);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(269, 136);
-            this.checkedListBox2.TabIndex = 13;
-            this.checkedListBox2.ThreeDCheckBoxes = true;
+            this.D1ListBox2.Location = new System.Drawing.Point(26, 480);
+            this.D1ListBox2.Name = "D1ListBox2";
+            this.D1ListBox2.Size = new System.Drawing.Size(269, 136);
+            this.D1ListBox2.TabIndex = 13;
+            this.D1ListBox2.ThreeDCheckBoxes = true;
             // 
             // label5
             // 
@@ -420,23 +420,23 @@ namespace Eduplan
             this.FinishButton.UseVisualStyleBackColor = false;
             this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
             // 
-            // checkedListBox1
+            // D1ListBox1
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.D1ListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D1ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D1ListBox1.CheckOnClick = true;
+            this.D1ListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D1ListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D1ListBox1.FormattingEnabled = true;
+            this.D1ListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D1ListBox1.Items.AddRange(new object[] {
             "Ναί",
             "Όχι"});
-            this.checkedListBox1.Location = new System.Drawing.Point(26, 248);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 68);
-            this.checkedListBox1.TabIndex = 8;
-            this.checkedListBox1.ThreeDCheckBoxes = true;
+            this.D1ListBox1.Location = new System.Drawing.Point(26, 248);
+            this.D1ListBox1.Name = "D1ListBox1";
+            this.D1ListBox1.Size = new System.Drawing.Size(120, 68);
+            this.D1ListBox1.TabIndex = 8;
+            this.D1ListBox1.ThreeDCheckBoxes = true;
             // 
             // label4
             // 
@@ -472,7 +472,7 @@ namespace Eduplan
             this.Test2panel.Controls.Add(this.label6);
             this.Test2panel.Controls.Add(this.label7);
             this.Test2panel.Controls.Add(this.label8);
-            this.Test2panel.Controls.Add(this.button_WOC1);
+            this.Test2panel.Controls.Add(this.FinishTest2Button);
             this.Test2panel.Controls.Add(this.label9);
             this.Test2panel.Controls.Add(this.label10);
             this.Test2panel.Location = new System.Drawing.Point(3, 1738);
@@ -524,29 +524,30 @@ namespace Eduplan
             this.label8.TabIndex = 10;
             this.label8.Text = "Ερώτηση 2 \r\n\r\nΠοιά από την παρακάτω μεταβλητή είναι αποδεκτή;\r\n\r\n\r\n\r\n";
             // 
-            // button_WOC1
+            // FinishTest2Button
             // 
-            this.button_WOC1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button_WOC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC1.CausesValidation = false;
-            this.button_WOC1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_WOC1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC1.Location = new System.Drawing.Point(367, 1225);
-            this.button_WOC1.Name = "button_WOC1";
-            this.button_WOC1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC1.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button_WOC1.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC1.Size = new System.Drawing.Size(398, 90);
-            this.button_WOC1.TabIndex = 9;
-            this.button_WOC1.Text = "Υποβολή διαγωνίσματος";
-            this.button_WOC1.TextColor = System.Drawing.Color.White;
-            this.button_WOC1.UseVisualStyleBackColor = false;
+            this.FinishTest2Button.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.FinishTest2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest2Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest2Button.CausesValidation = false;
+            this.FinishTest2Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FinishTest2Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishTest2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.Location = new System.Drawing.Point(367, 1225);
+            this.FinishTest2Button.Name = "FinishTest2Button";
+            this.FinishTest2Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest2Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FinishTest2Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.FinishTest2Button.Size = new System.Drawing.Size(398, 90);
+            this.FinishTest2Button.TabIndex = 9;
+            this.FinishTest2Button.Text = "Υποβολή διαγωνίσματος";
+            this.FinishTest2Button.TextColor = System.Drawing.Color.White;
+            this.FinishTest2Button.UseVisualStyleBackColor = false;
+            this.FinishTest2Button.Click += new System.EventHandler(this.FinishTest2Button_Click);
             // 
             // label9
             // 
@@ -582,7 +583,7 @@ namespace Eduplan
             this.Test3panel.Controls.Add(this.label12);
             this.Test3panel.Controls.Add(this.label13);
             this.Test3panel.Controls.Add(this.label14);
-            this.Test3panel.Controls.Add(this.button_WOC2);
+            this.Test3panel.Controls.Add(this.FinishTest3Button);
             this.Test3panel.Controls.Add(this.label15);
             this.Test3panel.Controls.Add(this.label16);
             this.Test3panel.Location = new System.Drawing.Point(3, 3095);
@@ -634,29 +635,30 @@ namespace Eduplan
             this.label14.TabIndex = 10;
             this.label14.Text = "Ερώτηση 2 \r\n\r\nΠοιά από την παρακάτω μεταβλητή είναι αποδεκτή;\r\n\r\n\r\n\r\n";
             // 
-            // button_WOC2
+            // FinishTest3Button
             // 
-            this.button_WOC2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button_WOC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC2.CausesValidation = false;
-            this.button_WOC2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_WOC2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC2.Location = new System.Drawing.Point(367, 1225);
-            this.button_WOC2.Name = "button_WOC2";
-            this.button_WOC2.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC2.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button_WOC2.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC2.Size = new System.Drawing.Size(398, 90);
-            this.button_WOC2.TabIndex = 9;
-            this.button_WOC2.Text = "Υποβολή διαγωνίσματος";
-            this.button_WOC2.TextColor = System.Drawing.Color.White;
-            this.button_WOC2.UseVisualStyleBackColor = false;
+            this.FinishTest3Button.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.FinishTest3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest3Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest3Button.CausesValidation = false;
+            this.FinishTest3Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FinishTest3Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishTest3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.Location = new System.Drawing.Point(367, 1225);
+            this.FinishTest3Button.Name = "FinishTest3Button";
+            this.FinishTest3Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest3Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FinishTest3Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.FinishTest3Button.Size = new System.Drawing.Size(398, 90);
+            this.FinishTest3Button.TabIndex = 9;
+            this.FinishTest3Button.Text = "Υποβολή διαγωνίσματος";
+            this.FinishTest3Button.TextColor = System.Drawing.Color.White;
+            this.FinishTest3Button.UseVisualStyleBackColor = false;
+            this.FinishTest3Button.Click += new System.EventHandler(this.FinishTest3Button_Click);
             // 
             // label15
             // 
@@ -692,7 +694,7 @@ namespace Eduplan
             this.TestFinalpanel.Controls.Add(this.label17);
             this.TestFinalpanel.Controls.Add(this.label18);
             this.TestFinalpanel.Controls.Add(this.label19);
-            this.TestFinalpanel.Controls.Add(this.button_WOC3);
+            this.TestFinalpanel.Controls.Add(this.FinishFinalTestButton);
             this.TestFinalpanel.Controls.Add(this.label20);
             this.TestFinalpanel.Controls.Add(this.label21);
             this.TestFinalpanel.Location = new System.Drawing.Point(3, 4452);
@@ -744,29 +746,30 @@ namespace Eduplan
             this.label19.TabIndex = 10;
             this.label19.Text = "Ερώτηση 2 \r\n\r\nΠοιά από την παρακάτω μεταβλητή είναι αποδεκτή;\r\n\r\n\r\n\r\n";
             // 
-            // button_WOC3
+            // FinishFinalTestButton
             // 
-            this.button_WOC3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button_WOC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC3.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC3.CausesValidation = false;
-            this.button_WOC3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_WOC3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.button_WOC3.Location = new System.Drawing.Point(367, 1225);
-            this.button_WOC3.Name = "button_WOC3";
-            this.button_WOC3.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.button_WOC3.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button_WOC3.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC3.Size = new System.Drawing.Size(398, 90);
-            this.button_WOC3.TabIndex = 9;
-            this.button_WOC3.Text = "Υποβολή διαγωνίσματος";
-            this.button_WOC3.TextColor = System.Drawing.Color.White;
-            this.button_WOC3.UseVisualStyleBackColor = false;
+            this.FinishFinalTestButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.FinishFinalTestButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishFinalTestButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishFinalTestButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishFinalTestButton.CausesValidation = false;
+            this.FinishFinalTestButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishFinalTestButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishFinalTestButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishFinalTestButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FinishFinalTestButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishFinalTestButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishFinalTestButton.Location = new System.Drawing.Point(367, 1225);
+            this.FinishFinalTestButton.Name = "FinishFinalTestButton";
+            this.FinishFinalTestButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishFinalTestButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FinishFinalTestButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.FinishFinalTestButton.Size = new System.Drawing.Size(398, 90);
+            this.FinishFinalTestButton.TabIndex = 9;
+            this.FinishFinalTestButton.Text = "Υποβολή διαγωνίσματος";
+            this.FinishFinalTestButton.TextColor = System.Drawing.Color.White;
+            this.FinishFinalTestButton.UseVisualStyleBackColor = false;
+            this.FinishFinalTestButton.Click += new System.EventHandler(this.FinishFinalTestButton_Click);
             // 
             // label20
             // 
@@ -840,35 +843,35 @@ namespace Eduplan
         private System.Windows.Forms.Panel Test1panel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox D1ListBox1;
         private ePOSOne.btnProduct.Button_WOC FinishButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
-        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.CheckedListBox D1ListBox2;
+        private System.Windows.Forms.CheckedListBox D1ListBox3;
+        private System.Windows.Forms.CheckedListBox D1ListBox4;
         private System.Windows.Forms.Panel Test2panel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private ePOSOne.btnProduct.Button_WOC button_WOC1;
+        private ePOSOne.btnProduct.Button_WOC FinishTest2Button;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.CheckedListBox D1ListBox5;
         private System.Windows.Forms.Panel Test3panel;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private ePOSOne.btnProduct.Button_WOC button_WOC2;
+        private ePOSOne.btnProduct.Button_WOC FinishTest3Button;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel TestFinalpanel;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private ePOSOne.btnProduct.Button_WOC button_WOC3;
+        private ePOSOne.btnProduct.Button_WOC FinishFinalTestButton;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
     }
