@@ -50,5 +50,10 @@ namespace Eduplan
         {
 
         }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Functions.CloseProgram(sender, e);
+        }
     }
 }
