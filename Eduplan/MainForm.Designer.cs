@@ -184,7 +184,7 @@ namespace Eduplan
             this.pythonPanel.Controls.Add(this.label1);
             this.pythonPanel.Location = new System.Drawing.Point(3, 3);
             this.pythonPanel.Name = "pythonPanel";
-            this.pythonPanel.Size = new System.Drawing.Size(1119, 8687);
+            this.pythonPanel.Size = new System.Drawing.Size(1105, 8688);
             this.pythonPanel.TabIndex = 0;
             // 
             // label19

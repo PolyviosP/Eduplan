@@ -53,11 +53,7 @@ namespace Eduplan
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Test2panel = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.FinishTest2Button = new ePOSOne.btnProduct.Button_WOC();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Test3panel = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -73,6 +69,16 @@ namespace Eduplan
             this.FinishFinalTestButton = new ePOSOne.btnProduct.Button_WOC();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.D2ListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.D2ListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.D2ListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.D2ListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.D2ListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.BasicPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -469,60 +475,23 @@ namespace Eduplan
             // 
             // Test2panel
             // 
+            this.Test2panel.Controls.Add(this.D2ListBox5);
             this.Test2panel.Controls.Add(this.label6);
+            this.Test2panel.Controls.Add(this.D2ListBox4);
+            this.Test2panel.Controls.Add(this.D2ListBox3);
+            this.Test2panel.Controls.Add(this.D2ListBox2);
             this.Test2panel.Controls.Add(this.label7);
             this.Test2panel.Controls.Add(this.label8);
-            this.Test2panel.Controls.Add(this.FinishTest2Button);
             this.Test2panel.Controls.Add(this.label9);
+            this.Test2panel.Controls.Add(this.D2ListBox1);
+            this.Test2panel.Controls.Add(this.label22);
+            this.Test2panel.Controls.Add(this.FinishTest2Button);
             this.Test2panel.Controls.Add(this.label10);
             this.Test2panel.Location = new System.Drawing.Point(3, 1738);
             this.Test2panel.Name = "Test2panel";
-            this.Test2panel.Size = new System.Drawing.Size(1092, 1351);
+            this.Test2panel.Size = new System.Drawing.Size(1092, 2235);
             this.Test2panel.TabIndex = 2;
             this.Test2panel.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(21, 957);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(432, 260);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Ερώτηση 4\r\n\r\nΤι μας εμφανίζει αυτή η αριθμητική πράξει:\r\n\r\n>>> 15/3*10\r\n\r\n\r\n\r\n\r\n\r" +
-    "\n";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(21, 661);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(398, 156);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Ερώτηση 3\r\n\r\nΤι τύπος μεταβλητής είναι το A = True ;\r\n\r\n\r\n\r\n";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(21, 364);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(516, 156);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Ερώτηση 2 \r\n\r\nΠοιά από την παρακάτω μεταβλητή είναι αποδεκτή;\r\n\r\n\r\n\r\n";
             // 
             // FinishTest2Button
             // 
@@ -537,7 +506,7 @@ namespace Eduplan
             this.FinishTest2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FinishTest2Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FinishTest2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest2Button.Location = new System.Drawing.Point(367, 1225);
+            this.FinishTest2Button.Location = new System.Drawing.Point(344, 2103);
             this.FinishTest2Button.Name = "FinishTest2Button";
             this.FinishTest2Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
             this.FinishTest2Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
@@ -548,21 +517,6 @@ namespace Eduplan
             this.FinishTest2Button.TextColor = System.Drawing.Color.White;
             this.FinishTest2Button.UseVisualStyleBackColor = false;
             this.FinishTest2Button.Click += new System.EventHandler(this.FinishTest2Button_Click);
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(21, 162);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(689, 156);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Ερώτηση 1\r\n\r\nΜπορεί να μεταβλητή να ξεκινάει απο τον χαρακτήρα underscore (_);\r\n\r" +
-    "\n\r\n\r\n";
             // 
             // label10
             // 
@@ -586,7 +540,7 @@ namespace Eduplan
             this.Test3panel.Controls.Add(this.FinishTest3Button);
             this.Test3panel.Controls.Add(this.label15);
             this.Test3panel.Controls.Add(this.label16);
-            this.Test3panel.Location = new System.Drawing.Point(3, 3095);
+            this.Test3panel.Location = new System.Drawing.Point(3, 3979);
             this.Test3panel.Name = "Test3panel";
             this.Test3panel.Size = new System.Drawing.Size(1092, 1351);
             this.Test3panel.TabIndex = 3;
@@ -697,7 +651,7 @@ namespace Eduplan
             this.TestFinalpanel.Controls.Add(this.FinishFinalTestButton);
             this.TestFinalpanel.Controls.Add(this.label20);
             this.TestFinalpanel.Controls.Add(this.label21);
-            this.TestFinalpanel.Location = new System.Drawing.Point(3, 4452);
+            this.TestFinalpanel.Location = new System.Drawing.Point(3, 5336);
             this.TestFinalpanel.Name = "TestFinalpanel";
             this.TestFinalpanel.Size = new System.Drawing.Size(1092, 1351);
             this.TestFinalpanel.TabIndex = 4;
@@ -800,6 +754,182 @@ namespace Eduplan
             this.label21.TabIndex = 5;
             this.label21.Text = "Διαγώνισμα - Επαναληπτικό";
             // 
+            // D2ListBox5
+            // 
+            this.D2ListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D2ListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D2ListBox5.CheckOnClick = true;
+            this.D2ListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2ListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D2ListBox5.FormattingEnabled = true;
+            this.D2ListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D2ListBox5.Items.AddRange(new object[] {
+            "32",
+            "16",
+            "0",
+            "10"});
+            this.D2ListBox5.Location = new System.Drawing.Point(26, 1916);
+            this.D2ListBox5.Name = "D2ListBox5";
+            this.D2ListBox5.Size = new System.Drawing.Size(333, 136);
+            this.D2ListBox5.TabIndex = 27;
+            this.D2ListBox5.ThreeDCheckBoxes = true;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(21, 1729);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(459, 208);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Ερώτηση 5\r\n \r\nΤι μας εμφανίζει αυτή η εντολή:\r\n\r\n>>> A = \"Ο Κοσμάς δεν το πήρε το" +
+    " μηχανάκι\"\r\n>>> len(A)/2-6\r\n\r\n\r\n";
+            // 
+            // D2ListBox4
+            // 
+            this.D2ListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D2ListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D2ListBox4.CheckOnClick = true;
+            this.D2ListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2ListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D2ListBox4.FormattingEnabled = true;
+            this.D2ListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D2ListBox4.Items.AddRange(new object[] {
+            "21",
+            "1",
+            "A",
+            "Ο Νίκος πήγε για ύπνο"});
+            this.D2ListBox4.Location = new System.Drawing.Point(26, 1549);
+            this.D2ListBox4.Name = "D2ListBox4";
+            this.D2ListBox4.Size = new System.Drawing.Size(337, 136);
+            this.D2ListBox4.TabIndex = 25;
+            this.D2ListBox4.ThreeDCheckBoxes = true;
+            // 
+            // D2ListBox3
+            // 
+            this.D2ListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D2ListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D2ListBox3.CheckOnClick = true;
+            this.D2ListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2ListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D2ListBox3.FormattingEnabled = true;
+            this.D2ListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D2ListBox3.Items.AddRange(new object[] {
+            "print(AB)",
+            "print(A + \" \" + B)",
+            "print(A_B)",
+            "print(A B)"});
+            this.D2ListBox3.Location = new System.Drawing.Point(26, 1186);
+            this.D2ListBox3.Name = "D2ListBox3";
+            this.D2ListBox3.Size = new System.Drawing.Size(269, 136);
+            this.D2ListBox3.TabIndex = 24;
+            this.D2ListBox3.ThreeDCheckBoxes = true;
+            // 
+            // D2ListBox2
+            // 
+            this.D2ListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D2ListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D2ListBox2.CheckOnClick = true;
+            this.D2ListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2ListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D2ListBox2.FormattingEnabled = true;
+            this.D2ListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D2ListBox2.Items.AddRange(new object[] {
+            "True",
+            "\"True\"",
+            "\"Geia\"",
+            "Geia"});
+            this.D2ListBox2.Location = new System.Drawing.Point(26, 766);
+            this.D2ListBox2.Name = "D2ListBox2";
+            this.D2ListBox2.Size = new System.Drawing.Size(269, 136);
+            this.D2ListBox2.TabIndex = 23;
+            this.D2ListBox2.ThreeDCheckBoxes = true;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(21, 1356);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(334, 156);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Ερώτηση 4\r\n\r\nΤι μας εμφανίζει αυτή η εντολή:\r\n\r\n>>> A = \"Ο Νίκος πήγε για ύπνο\"\r\n" +
+    ">>> len(A)\r\n";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label8.Location = new System.Drawing.Point(21, 943);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(778, 286);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Ερώτηση 3\r\n\r\nθέλουμε να τυπώσουμε το ονοματεπώνυμο (Κοσμάς Παπαδόπουλος) εστω οτι" +
+    ":\r\n\r\n>>>A = \'Κοσμας\'\r\n>>>Β = \'Παπαδόπουλος\'\r\n\r\nΠοιά από τις παρακάτω εντολές είν" +
+    "αι σωστή; \r\n\r\n\r\n\r\n";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(21, 542);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(297, 338);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Ερώτηση 2 \r\n\r\nΤι θα τυπώσει αυτη η εντολή:\r\n\r\n>>>B = True\r\n>>>B = \"Geia\"\r\n>>>prin" +
+    "t(B)\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            // 
+            // D2ListBox1
+            // 
+            this.D2ListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D2ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D2ListBox1.CheckOnClick = true;
+            this.D2ListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2ListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D2ListBox1.FormattingEnabled = true;
+            this.D2ListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D2ListBox1.Items.AddRange(new object[] {
+            "A",
+            "\"Hello World\"",
+            "Hello World",
+            "(A)"});
+            this.D2ListBox1.Location = new System.Drawing.Point(26, 351);
+            this.D2ListBox1.Name = "D2ListBox1";
+            this.D2ListBox1.Size = new System.Drawing.Size(225, 136);
+            this.D2ListBox1.TabIndex = 19;
+            this.D2ListBox1.ThreeDCheckBoxes = true;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label22.Location = new System.Drawing.Point(21, 168);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(297, 234);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "Ερώτηση 1\r\n\r\nΤι θα τυπώσει αυτη η εντολή:\r\n\r\n>>>A = \"Hello World\"\r\nprint(A)\r\n\r\n\r\n" +
+    "\r\n";
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -852,11 +982,7 @@ namespace Eduplan
         private System.Windows.Forms.CheckedListBox D1ListBox3;
         private System.Windows.Forms.CheckedListBox D1ListBox4;
         private System.Windows.Forms.Panel Test2panel;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private ePOSOne.btnProduct.Button_WOC FinishTest2Button;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckedListBox D1ListBox5;
@@ -874,5 +1000,15 @@ namespace Eduplan
         private ePOSOne.btnProduct.Button_WOC FinishFinalTestButton;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.CheckedListBox D2ListBox5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckedListBox D2ListBox4;
+        private System.Windows.Forms.CheckedListBox D2ListBox3;
+        private System.Windows.Forms.CheckedListBox D2ListBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckedListBox D2ListBox1;
+        private System.Windows.Forms.Label label22;
     }
 }

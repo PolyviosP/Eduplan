@@ -11,7 +11,7 @@ namespace Eduplan
     {
 
         
-        public static int RefreshBoxes(List<CheckedListBox> Box, List<string> L)
+        public static int TestResults(List<CheckedListBox> Box, List<string> L)
         {
             try
             {

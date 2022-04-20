@@ -62,16 +62,16 @@ namespace Eduplan
             List<CheckedListBox> D1_Checkboxes = new List<CheckedListBox>() { D1ListBox1, D1ListBox2, D1ListBox3, D1ListBox4, D1ListBox5 };
             List<string> D1 = new List<string>() { "Όχι", "Value", "bool", "50", "Όλα τα παραπάνω" };
 
-            int vath = Functions.RefreshBoxes(D1_Checkboxes, D1);
+            int vath = Functions.TestResults(D1_Checkboxes, D1);
             Console.WriteLine(vath);
             
         }
         private void FinishTest2Button_Click(object sender, EventArgs e)
         {
-            List<CheckedListBox> D2_Checkboxes = new List<CheckedListBox>() {  };
-            List<string> D2 = new List<string>() {  };
+            List<CheckedListBox> D2_Checkboxes = new List<CheckedListBox>() { D2ListBox1, D2ListBox2, D2ListBox3, D2ListBox4, D2ListBox5 };
+            List<string> D2 = new List<string>() { "Hello World", "Geia", @"print(A + "" "" + B)", "21", "10"};
 
-            int vath = Functions.RefreshBoxes(D2_Checkboxes, D2);
+            int vath = Functions.TestResults(D2_Checkboxes, D2);
             Console.WriteLine(vath);
         }
         private void FinishTest3Button_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace Eduplan
             List<CheckedListBox> D3_Checkboxes = new List<CheckedListBox>() {  };
             List<string> D3 = new List<string>() {  };
 
-            int vath = Functions.RefreshBoxes(D3_Checkboxes, D3);
+            int vath = Functions.TestResults(D3_Checkboxes, D3);
             Console.WriteLine(vath);
         }
         private void FinishFinalTestButton_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace Eduplan
             List<CheckedListBox> DF_Checkboxes = new List<CheckedListBox>() {  };
             List<string> DF = new List<string>() {  };
 
-            int vath = Functions.RefreshBoxes(DF_Checkboxes, DF);
+            int vath = Functions.TestResults(DF_Checkboxes, DF);
             Console.WriteLine(vath);
         }
         private void TestForm_FormClosing(object sender, FormClosingEventArgs e)
