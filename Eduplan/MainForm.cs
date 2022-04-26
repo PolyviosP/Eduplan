@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Eduplan
@@ -13,9 +7,11 @@ namespace Eduplan
     public partial class MainForm : Form
     {
         TestForm testform = new TestForm();
+        private Panel panel;
         public MainForm()
         {
             InitializeComponent();
+            panel = pythonPanel;
         }
 
         private void Label_Click(object sender, EventArgs e)
@@ -25,7 +21,9 @@ namespace Eduplan
 
         private void LessonButton_Click(object sender, EventArgs e)
         {
-
+            panel.Hide();
+            panel = pythonPanel;
+            panel.Show();
         }
 
         private void DiagonismataButton_Click(object sender, EventArgs e)
@@ -38,6 +36,9 @@ namespace Eduplan
 
         private void BathmoiButton_Click(object sender, EventArgs e)
         {
+            panel.Hide();
+            panel = GradesPanel;
+            panel.Show();
 
         }
 

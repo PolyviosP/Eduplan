@@ -31,6 +31,11 @@ namespace Eduplan
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestForm));
             this.BasicPanel = new System.Windows.Forms.Panel();
+            this.BackButton = new ePOSOne.btnProduct.Button_WOC();
+            this.TestFinalButton = new ePOSOne.btnProduct.Button_WOC();
+            this.Test3Button = new ePOSOne.btnProduct.Button_WOC();
+            this.Test2Button = new ePOSOne.btnProduct.Button_WOC();
+            this.Test1Button = new ePOSOne.btnProduct.Button_WOC();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -43,6 +48,7 @@ namespace Eduplan
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.FinishButton = new ePOSOne.btnProduct.Button_WOC();
             this.D1ListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,40 +63,34 @@ namespace Eduplan
             this.label9 = new System.Windows.Forms.Label();
             this.D2ListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.FinishTest2Button = new ePOSOne.btnProduct.Button_WOC();
             this.label10 = new System.Windows.Forms.Label();
             this.Test3panel = new System.Windows.Forms.Panel();
+            this.D3ListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.D3ListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.D3ListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.D3ListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.D3ListBox4 = new System.Windows.Forms.CheckedListBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.FinishTest3Button = new ePOSOne.btnProduct.Button_WOC();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.TestFinalpanel = new System.Windows.Forms.Panel();
+            this.DFListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.DFListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.DFListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.DFListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.DFListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.label24 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.FinishFinalTestButton = new ePOSOne.btnProduct.Button_WOC();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.D3ListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.D3ListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.D3ListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.D3ListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.D3ListBox5 = new System.Windows.Forms.CheckedListBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.DFListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.DFListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.DFListBox5 = new System.Windows.Forms.CheckedListBox();
-            this.DFListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.DFListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.FinishButton = new ePOSOne.btnProduct.Button_WOC();
-            this.FinishTest2Button = new ePOSOne.btnProduct.Button_WOC();
-            this.FinishTest3Button = new ePOSOne.btnProduct.Button_WOC();
-            this.FinishFinalTestButton = new ePOSOne.btnProduct.Button_WOC();
-            this.BackButton = new ePOSOne.btnProduct.Button_WOC();
-            this.TestFinalButton = new ePOSOne.btnProduct.Button_WOC();
-            this.Test3Button = new ePOSOne.btnProduct.Button_WOC();
-            this.Test2Button = new ePOSOne.btnProduct.Button_WOC();
-            this.Test1Button = new ePOSOne.btnProduct.Button_WOC();
             this.BasicPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -115,6 +115,116 @@ namespace Eduplan
             this.BasicPanel.Name = "BasicPanel";
             this.BasicPanel.Size = new System.Drawing.Size(266, 754);
             this.BasicPanel.TabIndex = 1;
+            // 
+            // BackButton
+            // 
+            this.BackButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.Location = new System.Drawing.Point(3, 625);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BackButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.BackButton.Size = new System.Drawing.Size(260, 90);
+            this.BackButton.TabIndex = 11;
+            this.BackButton.Text = "< Πίσω";
+            this.BackButton.TextColor = System.Drawing.Color.White;
+            this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // TestFinalButton
+            // 
+            this.TestFinalButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TestFinalButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestFinalButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.Location = new System.Drawing.Point(3, 529);
+            this.TestFinalButton.Name = "TestFinalButton";
+            this.TestFinalButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.TestFinalButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TestFinalButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.TestFinalButton.Size = new System.Drawing.Size(260, 90);
+            this.TestFinalButton.TabIndex = 10;
+            this.TestFinalButton.Text = "Τελικό Διαγώνισμα";
+            this.TestFinalButton.TextColor = System.Drawing.Color.White;
+            this.TestFinalButton.UseVisualStyleBackColor = false;
+            this.TestFinalButton.Click += new System.EventHandler(this.TestFinalButton_Click);
+            // 
+            // Test3Button
+            // 
+            this.Test3Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Test3Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.Location = new System.Drawing.Point(3, 433);
+            this.Test3Button.Name = "Test3Button";
+            this.Test3Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test3Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Test3Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Test3Button.Size = new System.Drawing.Size(260, 90);
+            this.Test3Button.TabIndex = 9;
+            this.Test3Button.Text = "Διαγώνισμα 3";
+            this.Test3Button.TextColor = System.Drawing.Color.White;
+            this.Test3Button.UseVisualStyleBackColor = false;
+            this.Test3Button.Click += new System.EventHandler(this.Test3Button_Click);
+            // 
+            // Test2Button
+            // 
+            this.Test2Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Test2Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.Location = new System.Drawing.Point(3, 337);
+            this.Test2Button.Name = "Test2Button";
+            this.Test2Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test2Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Test2Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Test2Button.Size = new System.Drawing.Size(260, 90);
+            this.Test2Button.TabIndex = 8;
+            this.Test2Button.Text = "Διαγώνισμα 2";
+            this.Test2Button.TextColor = System.Drawing.Color.White;
+            this.Test2Button.UseVisualStyleBackColor = false;
+            this.Test2Button.Click += new System.EventHandler(this.Test2Button_Click);
+            // 
+            // Test1Button
+            // 
+            this.Test1Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Test1Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test1Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.Location = new System.Drawing.Point(3, 241);
+            this.Test1Button.Name = "Test1Button";
+            this.Test1Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.Test1Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Test1Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.Test1Button.Size = new System.Drawing.Size(260, 90);
+            this.Test1Button.TabIndex = 7;
+            this.Test1Button.Text = "Διαγώνισμα 1";
+            this.Test1Button.TextColor = System.Drawing.Color.White;
+            this.Test1Button.UseVisualStyleBackColor = false;
+            this.Test1Button.Click += new System.EventHandler(this.Test1Button_Click);
             // 
             // panel1
             // 
@@ -306,6 +416,31 @@ namespace Eduplan
             this.label1.Size = new System.Drawing.Size(516, 156);
             this.label1.TabIndex = 10;
             this.label1.Text = "Ερώτηση 2 \r\n\r\nΠοιά από την παρακάτω μεταβλητή είναι αποδεκτή;\r\n\r\n\r\n\r\n";
+            // 
+            // FinishButton
+            // 
+            this.FinishButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.FinishButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishButton.CausesValidation = false;
+            this.FinishButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FinishButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishButton.Location = new System.Drawing.Point(371, 1600);
+            this.FinishButton.Name = "FinishButton";
+            this.FinishButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FinishButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.FinishButton.Size = new System.Drawing.Size(398, 90);
+            this.FinishButton.TabIndex = 9;
+            this.FinishButton.Text = "Υποβολή διαγωνίσματος";
+            this.FinishButton.TextColor = System.Drawing.Color.White;
+            this.FinishButton.UseVisualStyleBackColor = false;
+            this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
             // 
             // D1ListBox1
             // 
@@ -556,6 +691,31 @@ namespace Eduplan
             this.label22.Text = "Ερώτηση 1\r\n\r\nΤι θα τυπώσει αυτη η εντολή:\r\n\r\n>>>A = \"Hello World\"\r\nprint(A)\r\n\r\n\r\n" +
     "\r\n";
             // 
+            // FinishTest2Button
+            // 
+            this.FinishTest2Button.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.FinishTest2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest2Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest2Button.CausesValidation = false;
+            this.FinishTest2Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FinishTest2Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishTest2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest2Button.Location = new System.Drawing.Point(344, 2103);
+            this.FinishTest2Button.Name = "FinishTest2Button";
+            this.FinishTest2Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest2Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FinishTest2Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.FinishTest2Button.Size = new System.Drawing.Size(398, 90);
+            this.FinishTest2Button.TabIndex = 9;
+            this.FinishTest2Button.Text = "Υποβολή διαγωνίσματος";
+            this.FinishTest2Button.TextColor = System.Drawing.Color.White;
+            this.FinishTest2Button.UseVisualStyleBackColor = false;
+            this.FinishTest2Button.Click += new System.EventHandler(this.FinishTest2Button_Click);
+            // 
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -589,6 +749,125 @@ namespace Eduplan
             this.Test3panel.Size = new System.Drawing.Size(1092, 2659);
             this.Test3panel.TabIndex = 3;
             this.Test3panel.Visible = false;
+            // 
+            // D3ListBox5
+            // 
+            this.D3ListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D3ListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D3ListBox5.CheckOnClick = true;
+            this.D3ListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D3ListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D3ListBox5.FormattingEnabled = true;
+            this.D3ListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D3ListBox5.Items.AddRange(new object[] {
+            "5",
+            "B",
+            "error",
+            "10"});
+            this.D3ListBox5.Location = new System.Drawing.Point(26, 2271);
+            this.D3ListBox5.Name = "D3ListBox5";
+            this.D3ListBox5.Size = new System.Drawing.Size(333, 204);
+            this.D3ListBox5.TabIndex = 33;
+            this.D3ListBox5.ThreeDCheckBoxes = true;
+            this.D3ListBox5.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox5_ItemCheck);
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label23.Location = new System.Drawing.Point(21, 1888);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(323, 494);
+            this.label23.TabIndex = 32;
+            this.label23.Text = resources.GetString("label23.Text");
+            // 
+            // D3ListBox1
+            // 
+            this.D3ListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D3ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D3ListBox1.CheckOnClick = true;
+            this.D3ListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D3ListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D3ListBox1.FormattingEnabled = true;
+            this.D3ListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D3ListBox1.Items.AddRange(new object[] {
+            "B",
+            "25",
+            "Error",
+            "\"25\""});
+            this.D3ListBox1.Location = new System.Drawing.Point(26, 371);
+            this.D3ListBox1.Name = "D3ListBox1";
+            this.D3ListBox1.Size = new System.Drawing.Size(333, 136);
+            this.D3ListBox1.TabIndex = 31;
+            this.D3ListBox1.ThreeDCheckBoxes = true;
+            this.D3ListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox1_ItemCheck);
+            // 
+            // D3ListBox2
+            // 
+            this.D3ListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D3ListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D3ListBox2.CheckOnClick = true;
+            this.D3ListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D3ListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D3ListBox2.FormattingEnabled = true;
+            this.D3ListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D3ListBox2.Items.AddRange(new object[] {
+            "20",
+            "X",
+            "10",
+            "5"});
+            this.D3ListBox2.Location = new System.Drawing.Point(26, 850);
+            this.D3ListBox2.Name = "D3ListBox2";
+            this.D3ListBox2.Size = new System.Drawing.Size(333, 136);
+            this.D3ListBox2.TabIndex = 30;
+            this.D3ListBox2.ThreeDCheckBoxes = true;
+            this.D3ListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox2_ItemCheck);
+            // 
+            // D3ListBox3
+            // 
+            this.D3ListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D3ListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D3ListBox3.CheckOnClick = true;
+            this.D3ListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D3ListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D3ListBox3.FormattingEnabled = true;
+            this.D3ListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D3ListBox3.Items.AddRange(new object[] {
+            "True η False",
+            "Μόνο True",
+            "Μόνο False",
+            "true η false"});
+            this.D3ListBox3.Location = new System.Drawing.Point(26, 1134);
+            this.D3ListBox3.Name = "D3ListBox3";
+            this.D3ListBox3.Size = new System.Drawing.Size(333, 136);
+            this.D3ListBox3.TabIndex = 29;
+            this.D3ListBox3.ThreeDCheckBoxes = true;
+            this.D3ListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox3_ItemCheck);
+            // 
+            // D3ListBox4
+            // 
+            this.D3ListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.D3ListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.D3ListBox4.CheckOnClick = true;
+            this.D3ListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D3ListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.D3ListBox4.FormattingEnabled = true;
+            this.D3ListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.D3ListBox4.Items.AddRange(new object[] {
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.D3ListBox4.Location = new System.Drawing.Point(26, 1711);
+            this.D3ListBox4.Name = "D3ListBox4";
+            this.D3ListBox4.Size = new System.Drawing.Size(333, 136);
+            this.D3ListBox4.TabIndex = 28;
+            this.D3ListBox4.ThreeDCheckBoxes = true;
+            this.D3ListBox4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox4_ItemCheck);
             // 
             // label12
             // 
@@ -636,6 +915,31 @@ namespace Eduplan
             this.label14.Text = "Ερώτηση 2 \r\n\r\nΤι μας εμφανίζει αυτή η εντολή:\r\n\r\nX = 10\r\nif X > 5:\r\n      X = X*2" +
     "\r\n      print(X)\r\nelse:\r\n      print(X)\r\n\r\n\r\n\r\n\r\n\r\n";
             // 
+            // FinishTest3Button
+            // 
+            this.FinishTest3Button.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.FinishTest3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest3Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest3Button.CausesValidation = false;
+            this.FinishTest3Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FinishTest3Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinishTest3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.FinishTest3Button.Location = new System.Drawing.Point(396, 2507);
+            this.FinishTest3Button.Name = "FinishTest3Button";
+            this.FinishTest3Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.FinishTest3Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FinishTest3Button.OnHoverTextColor = System.Drawing.Color.White;
+            this.FinishTest3Button.Size = new System.Drawing.Size(398, 90);
+            this.FinishTest3Button.TabIndex = 9;
+            this.FinishTest3Button.Text = "Υποβολή διαγωνίσματος";
+            this.FinishTest3Button.TextColor = System.Drawing.Color.White;
+            this.FinishTest3Button.UseVisualStyleBackColor = false;
+            this.FinishTest3Button.Click += new System.EventHandler(this.FinishTest3Button_Click);
+            // 
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -661,9 +965,9 @@ namespace Eduplan
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label16.Location = new System.Drawing.Point(321, 73);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(408, 32);
+            this.label16.Size = new System.Drawing.Size(400, 32);
             this.label16.TabIndex = 5;
-            this.label16.Text = "Διαγώνισμα - Εντολές, ελέγχου";
+            this.label16.Text = "Διαγώνισμα - Εντολές ελέγχου";
             // 
             // TestFinalpanel
             // 
@@ -684,6 +988,125 @@ namespace Eduplan
             this.TestFinalpanel.Size = new System.Drawing.Size(1092, 2675);
             this.TestFinalpanel.TabIndex = 4;
             this.TestFinalpanel.Visible = false;
+            // 
+            // DFListBox3
+            // 
+            this.DFListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.DFListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DFListBox3.CheckOnClick = true;
+            this.DFListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DFListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.DFListBox3.FormattingEnabled = true;
+            this.DFListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.DFListBox3.Items.AddRange(new object[] {
+            "string",
+            "interger",
+            "boolean",
+            "None"});
+            this.DFListBox3.Location = new System.Drawing.Point(26, 1241);
+            this.DFListBox3.Name = "DFListBox3";
+            this.DFListBox3.Size = new System.Drawing.Size(333, 136);
+            this.DFListBox3.TabIndex = 38;
+            this.DFListBox3.ThreeDCheckBoxes = true;
+            this.DFListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox3_ItemCheck);
+            // 
+            // DFListBox4
+            // 
+            this.DFListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.DFListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DFListBox4.CheckOnClick = true;
+            this.DFListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DFListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.DFListBox4.FormattingEnabled = true;
+            this.DFListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.DFListBox4.Items.AddRange(new object[] {
+            "3",
+            "B",
+            "100",
+            "200"});
+            this.DFListBox4.Location = new System.Drawing.Point(26, 1704);
+            this.DFListBox4.Name = "DFListBox4";
+            this.DFListBox4.Size = new System.Drawing.Size(333, 136);
+            this.DFListBox4.TabIndex = 37;
+            this.DFListBox4.ThreeDCheckBoxes = true;
+            this.DFListBox4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox4_ItemCheck);
+            // 
+            // DFListBox5
+            // 
+            this.DFListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.DFListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DFListBox5.CheckOnClick = true;
+            this.DFListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DFListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.DFListBox5.FormattingEnabled = true;
+            this.DFListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.DFListBox5.Items.AddRange(new object[] {
+            "false",
+            "False",
+            "True",
+            "10"});
+            this.DFListBox5.Location = new System.Drawing.Point(26, 2316);
+            this.DFListBox5.Name = "DFListBox5";
+            this.DFListBox5.Size = new System.Drawing.Size(333, 136);
+            this.DFListBox5.TabIndex = 36;
+            this.DFListBox5.ThreeDCheckBoxes = true;
+            this.DFListBox5.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox5_ItemCheck);
+            // 
+            // DFListBox1
+            // 
+            this.DFListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.DFListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DFListBox1.CheckOnClick = true;
+            this.DFListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DFListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.DFListBox1.FormattingEnabled = true;
+            this.DFListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.DFListBox1.Items.AddRange(new object[] {
+            "GEIA",
+            "A",
+            "GEIAGEIA",
+            "\"GEIA\""});
+            this.DFListBox1.Location = new System.Drawing.Point(26, 382);
+            this.DFListBox1.Name = "DFListBox1";
+            this.DFListBox1.Size = new System.Drawing.Size(333, 136);
+            this.DFListBox1.TabIndex = 35;
+            this.DFListBox1.ThreeDCheckBoxes = true;
+            this.DFListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox1_ItemCheck);
+            // 
+            // DFListBox2
+            // 
+            this.DFListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.DFListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DFListBox2.CheckOnClick = true;
+            this.DFListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DFListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.DFListBox2.FormattingEnabled = true;
+            this.DFListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.DFListBox2.Items.AddRange(new object[] {
+            "True",
+            "1",
+            "Error",
+            "false"});
+            this.DFListBox2.Location = new System.Drawing.Point(26, 877);
+            this.DFListBox2.Name = "DFListBox2";
+            this.DFListBox2.Size = new System.Drawing.Size(333, 136);
+            this.DFListBox2.TabIndex = 34;
+            this.DFListBox2.ThreeDCheckBoxes = true;
+            this.DFListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox2_ItemCheck);
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label24.Location = new System.Drawing.Point(21, 1900);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(323, 364);
+            this.label24.TabIndex = 33;
+            this.label24.Text = resources.GetString("label24.Text");
             // 
             // label17
             // 
@@ -729,348 +1152,6 @@ namespace Eduplan
             this.label19.Text = "Ερώτηση 2 \r\n\r\nΤι εμφανίζει αυτή η εντολή:\r\n\r\nif False:\r\n      print(1)\r\nelif True" +
     ":\r\n      print(\"false\")\r\nelse:\r\n      print(True)\r\n\r\n\r\n";
             // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label20.Location = new System.Drawing.Point(21, 173);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(280, 286);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Ερώτηση 1\r\n\r\nΤι εμφανίζει αυτή η εντολή:\r\n\r\n>>> A = \"GEIA\"\r\n>>> A = A*2\r\n>>> prin" +
-    "t(A)\r\n\r\n\r\n\r\n\r\n";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label21.Location = new System.Drawing.Point(349, 75);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(361, 32);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "Διαγώνισμα - Επαναληπτικό";
-            // 
-            // D3ListBox4
-            // 
-            this.D3ListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.D3ListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.D3ListBox4.CheckOnClick = true;
-            this.D3ListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.D3ListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.D3ListBox4.FormattingEnabled = true;
-            this.D3ListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.D3ListBox4.Items.AddRange(new object[] {
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.D3ListBox4.Location = new System.Drawing.Point(26, 1711);
-            this.D3ListBox4.Name = "D3ListBox4";
-            this.D3ListBox4.Size = new System.Drawing.Size(333, 136);
-            this.D3ListBox4.TabIndex = 28;
-            this.D3ListBox4.ThreeDCheckBoxes = true;
-            this.D3ListBox4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox4_ItemCheck);
-            // 
-            // D3ListBox3
-            // 
-            this.D3ListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.D3ListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.D3ListBox3.CheckOnClick = true;
-            this.D3ListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.D3ListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.D3ListBox3.FormattingEnabled = true;
-            this.D3ListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.D3ListBox3.Items.AddRange(new object[] {
-            "True η False",
-            "Μόνο True",
-            "Μόνο False",
-            "true η false"});
-            this.D3ListBox3.Location = new System.Drawing.Point(26, 1134);
-            this.D3ListBox3.Name = "D3ListBox3";
-            this.D3ListBox3.Size = new System.Drawing.Size(333, 136);
-            this.D3ListBox3.TabIndex = 29;
-            this.D3ListBox3.ThreeDCheckBoxes = true;
-            this.D3ListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox3_ItemCheck);
-            // 
-            // D3ListBox2
-            // 
-            this.D3ListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.D3ListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.D3ListBox2.CheckOnClick = true;
-            this.D3ListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.D3ListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.D3ListBox2.FormattingEnabled = true;
-            this.D3ListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.D3ListBox2.Items.AddRange(new object[] {
-            "20",
-            "X",
-            "10",
-            "5"});
-            this.D3ListBox2.Location = new System.Drawing.Point(26, 850);
-            this.D3ListBox2.Name = "D3ListBox2";
-            this.D3ListBox2.Size = new System.Drawing.Size(333, 136);
-            this.D3ListBox2.TabIndex = 30;
-            this.D3ListBox2.ThreeDCheckBoxes = true;
-            this.D3ListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox2_ItemCheck);
-            // 
-            // D3ListBox1
-            // 
-            this.D3ListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.D3ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.D3ListBox1.CheckOnClick = true;
-            this.D3ListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.D3ListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.D3ListBox1.FormattingEnabled = true;
-            this.D3ListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.D3ListBox1.Items.AddRange(new object[] {
-            "B",
-            "25",
-            "Error",
-            "\"25\""});
-            this.D3ListBox1.Location = new System.Drawing.Point(26, 371);
-            this.D3ListBox1.Name = "D3ListBox1";
-            this.D3ListBox1.Size = new System.Drawing.Size(333, 136);
-            this.D3ListBox1.TabIndex = 31;
-            this.D3ListBox1.ThreeDCheckBoxes = true;
-            this.D3ListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox1_ItemCheck);
-            // 
-            // D3ListBox5
-            // 
-            this.D3ListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.D3ListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.D3ListBox5.CheckOnClick = true;
-            this.D3ListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.D3ListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.D3ListBox5.FormattingEnabled = true;
-            this.D3ListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.D3ListBox5.Items.AddRange(new object[] {
-            "5",
-            "B",
-            "error",
-            "10"});
-            this.D3ListBox5.Location = new System.Drawing.Point(26, 2271);
-            this.D3ListBox5.Name = "D3ListBox5";
-            this.D3ListBox5.Size = new System.Drawing.Size(333, 204);
-            this.D3ListBox5.TabIndex = 33;
-            this.D3ListBox5.ThreeDCheckBoxes = true;
-            this.D3ListBox5.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.D3ListBox5_ItemCheck);
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label23.Location = new System.Drawing.Point(21, 1888);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(323, 494);
-            this.label23.TabIndex = 32;
-            this.label23.Text = resources.GetString("label23.Text");
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label24.Location = new System.Drawing.Point(21, 1900);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(323, 364);
-            this.label24.TabIndex = 33;
-            this.label24.Text = resources.GetString("label24.Text");
-            // 
-            // DFListBox2
-            // 
-            this.DFListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.DFListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DFListBox2.CheckOnClick = true;
-            this.DFListBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DFListBox2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.DFListBox2.FormattingEnabled = true;
-            this.DFListBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.DFListBox2.Items.AddRange(new object[] {
-            "True",
-            "1",
-            "Error",
-            "false"});
-            this.DFListBox2.Location = new System.Drawing.Point(26, 877);
-            this.DFListBox2.Name = "DFListBox2";
-            this.DFListBox2.Size = new System.Drawing.Size(333, 136);
-            this.DFListBox2.TabIndex = 34;
-            this.DFListBox2.ThreeDCheckBoxes = true;
-            this.DFListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox2_ItemCheck);
-            // 
-            // DFListBox1
-            // 
-            this.DFListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.DFListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DFListBox1.CheckOnClick = true;
-            this.DFListBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DFListBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.DFListBox1.FormattingEnabled = true;
-            this.DFListBox1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.DFListBox1.Items.AddRange(new object[] {
-            "GEIA",
-            "A",
-            "GEIAGEIA",
-            "\"GEIA\""});
-            this.DFListBox1.Location = new System.Drawing.Point(26, 382);
-            this.DFListBox1.Name = "DFListBox1";
-            this.DFListBox1.Size = new System.Drawing.Size(333, 136);
-            this.DFListBox1.TabIndex = 35;
-            this.DFListBox1.ThreeDCheckBoxes = true;
-            this.DFListBox1.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox1_ItemCheck);
-            // 
-            // DFListBox5
-            // 
-            this.DFListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.DFListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DFListBox5.CheckOnClick = true;
-            this.DFListBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DFListBox5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.DFListBox5.FormattingEnabled = true;
-            this.DFListBox5.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.DFListBox5.Items.AddRange(new object[] {
-            "false",
-            "False",
-            "True",
-            "10"});
-            this.DFListBox5.Location = new System.Drawing.Point(26, 2316);
-            this.DFListBox5.Name = "DFListBox5";
-            this.DFListBox5.Size = new System.Drawing.Size(333, 136);
-            this.DFListBox5.TabIndex = 36;
-            this.DFListBox5.ThreeDCheckBoxes = true;
-            this.DFListBox5.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox5_ItemCheck);
-            // 
-            // DFListBox4
-            // 
-            this.DFListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.DFListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DFListBox4.CheckOnClick = true;
-            this.DFListBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DFListBox4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.DFListBox4.FormattingEnabled = true;
-            this.DFListBox4.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.DFListBox4.Items.AddRange(new object[] {
-            "3",
-            "B",
-            "100",
-            "200"});
-            this.DFListBox4.Location = new System.Drawing.Point(26, 1704);
-            this.DFListBox4.Name = "DFListBox4";
-            this.DFListBox4.Size = new System.Drawing.Size(333, 136);
-            this.DFListBox4.TabIndex = 37;
-            this.DFListBox4.ThreeDCheckBoxes = true;
-            this.DFListBox4.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox4_ItemCheck);
-            // 
-            // DFListBox3
-            // 
-            this.DFListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.DFListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DFListBox3.CheckOnClick = true;
-            this.DFListBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DFListBox3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.DFListBox3.FormattingEnabled = true;
-            this.DFListBox3.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.DFListBox3.Items.AddRange(new object[] {
-            "string",
-            "interger",
-            "boolean",
-            "None"});
-            this.DFListBox3.Location = new System.Drawing.Point(26, 1241);
-            this.DFListBox3.Name = "DFListBox3";
-            this.DFListBox3.Size = new System.Drawing.Size(333, 136);
-            this.DFListBox3.TabIndex = 38;
-            this.DFListBox3.ThreeDCheckBoxes = true;
-            this.DFListBox3.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DFListBox3_ItemCheck);
-            // 
-            // FinishButton
-            // 
-            this.FinishButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.FinishButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishButton.CausesValidation = false;
-            this.FinishButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FinishButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinishButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishButton.Location = new System.Drawing.Point(371, 1600);
-            this.FinishButton.Name = "FinishButton";
-            this.FinishButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.FinishButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.FinishButton.Size = new System.Drawing.Size(398, 90);
-            this.FinishButton.TabIndex = 9;
-            this.FinishButton.Text = "Υποβολή διαγωνίσματος";
-            this.FinishButton.TextColor = System.Drawing.Color.White;
-            this.FinishButton.UseVisualStyleBackColor = false;
-            this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
-            // 
-            // FinishTest2Button
-            // 
-            this.FinishTest2Button.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.FinishTest2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest2Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishTest2Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishTest2Button.CausesValidation = false;
-            this.FinishTest2Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FinishTest2Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinishTest2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest2Button.Location = new System.Drawing.Point(344, 2103);
-            this.FinishTest2Button.Name = "FinishTest2Button";
-            this.FinishTest2Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishTest2Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.FinishTest2Button.OnHoverTextColor = System.Drawing.Color.White;
-            this.FinishTest2Button.Size = new System.Drawing.Size(398, 90);
-            this.FinishTest2Button.TabIndex = 9;
-            this.FinishTest2Button.Text = "Υποβολή διαγωνίσματος";
-            this.FinishTest2Button.TextColor = System.Drawing.Color.White;
-            this.FinishTest2Button.UseVisualStyleBackColor = false;
-            this.FinishTest2Button.Click += new System.EventHandler(this.FinishTest2Button_Click);
-            // 
-            // FinishTest3Button
-            // 
-            this.FinishTest3Button.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.FinishTest3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest3Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishTest3Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishTest3Button.CausesValidation = false;
-            this.FinishTest3Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FinishTest3Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinishTest3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.FinishTest3Button.Location = new System.Drawing.Point(396, 2507);
-            this.FinishTest3Button.Name = "FinishTest3Button";
-            this.FinishTest3Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.FinishTest3Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.FinishTest3Button.OnHoverTextColor = System.Drawing.Color.White;
-            this.FinishTest3Button.Size = new System.Drawing.Size(398, 90);
-            this.FinishTest3Button.TabIndex = 9;
-            this.FinishTest3Button.Text = "Υποβολή διαγωνίσματος";
-            this.FinishTest3Button.TextColor = System.Drawing.Color.White;
-            this.FinishTest3Button.UseVisualStyleBackColor = false;
-            this.FinishTest3Button.Click += new System.EventHandler(this.FinishTest3Button_Click);
-            // 
             // FinishFinalTestButton
             // 
             this.FinishFinalTestButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -1096,115 +1177,34 @@ namespace Eduplan
             this.FinishFinalTestButton.UseVisualStyleBackColor = false;
             this.FinishFinalTestButton.Click += new System.EventHandler(this.FinishFinalTestButton_Click);
             // 
-            // BackButton
+            // label20
             // 
-            this.BackButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.Location = new System.Drawing.Point(3, 625);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BackButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.BackButton.Size = new System.Drawing.Size(260, 90);
-            this.BackButton.TabIndex = 11;
-            this.BackButton.Text = "< Πίσω";
-            this.BackButton.TextColor = System.Drawing.Color.White;
-            this.BackButton.UseVisualStyleBackColor = false;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label20.Location = new System.Drawing.Point(21, 173);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(280, 286);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Ερώτηση 1\r\n\r\nΤι εμφανίζει αυτή η εντολή:\r\n\r\n>>> A = \"GEIA\"\r\n>>> A = A*2\r\n>>> prin" +
+    "t(A)\r\n\r\n\r\n\r\n\r\n";
             // 
-            // TestFinalButton
+            // label21
             // 
-            this.TestFinalButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TestFinalButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TestFinalButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.Location = new System.Drawing.Point(3, 529);
-            this.TestFinalButton.Name = "TestFinalButton";
-            this.TestFinalButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.TestFinalButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.TestFinalButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.TestFinalButton.Size = new System.Drawing.Size(260, 90);
-            this.TestFinalButton.TabIndex = 10;
-            this.TestFinalButton.Text = "Τελικό Διαγώνισμα";
-            this.TestFinalButton.TextColor = System.Drawing.Color.White;
-            this.TestFinalButton.UseVisualStyleBackColor = false;
-            this.TestFinalButton.Click += new System.EventHandler(this.TestFinalButton_Click);
-            // 
-            // Test3Button
-            // 
-            this.Test3Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Test3Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.Location = new System.Drawing.Point(3, 433);
-            this.Test3Button.Name = "Test3Button";
-            this.Test3Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test3Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Test3Button.OnHoverTextColor = System.Drawing.Color.White;
-            this.Test3Button.Size = new System.Drawing.Size(260, 90);
-            this.Test3Button.TabIndex = 9;
-            this.Test3Button.Text = "Διαγώνισμα 3";
-            this.Test3Button.TextColor = System.Drawing.Color.White;
-            this.Test3Button.UseVisualStyleBackColor = false;
-            this.Test3Button.Click += new System.EventHandler(this.Test3Button_Click);
-            // 
-            // Test2Button
-            // 
-            this.Test2Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Test2Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.Location = new System.Drawing.Point(3, 337);
-            this.Test2Button.Name = "Test2Button";
-            this.Test2Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test2Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Test2Button.OnHoverTextColor = System.Drawing.Color.White;
-            this.Test2Button.Size = new System.Drawing.Size(260, 90);
-            this.Test2Button.TabIndex = 8;
-            this.Test2Button.Text = "Διαγώνισμα 2";
-            this.Test2Button.TextColor = System.Drawing.Color.White;
-            this.Test2Button.UseVisualStyleBackColor = false;
-            this.Test2Button.Click += new System.EventHandler(this.Test2Button_Click);
-            // 
-            // Test1Button
-            // 
-            this.Test1Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Test1Button.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test1Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.Location = new System.Drawing.Point(3, 241);
-            this.Test1Button.Name = "Test1Button";
-            this.Test1Button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.Test1Button.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Test1Button.OnHoverTextColor = System.Drawing.Color.White;
-            this.Test1Button.Size = new System.Drawing.Size(260, 90);
-            this.Test1Button.TabIndex = 7;
-            this.Test1Button.Text = "Διαγώνισμα 1";
-            this.Test1Button.TextColor = System.Drawing.Color.White;
-            this.Test1Button.UseVisualStyleBackColor = false;
-            this.Test1Button.Click += new System.EventHandler(this.Test1Button_Click);
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label21.Location = new System.Drawing.Point(390, 68);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(361, 32);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "Διαγώνισμα - Επαναληπτικό";
             // 
             // TestForm
             // 

@@ -32,47 +32,60 @@ namespace Eduplan
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.BasicPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.Label = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.pythonPanel = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.GradesPanel = new System.Windows.Forms.Panel();
             this.BathmoiButton = new ePOSOne.btnProduct.Button_WOC();
             this.DiagonismataButton = new ePOSOne.btnProduct.Button_WOC();
             this.LessonButton = new ePOSOne.btnProduct.Button_WOC();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.Test1label = new System.Windows.Forms.Label();
+            this.TestMOlabel = new System.Windows.Forms.Label();
+            this.Test4label = new System.Windows.Forms.Label();
+            this.Test3label = new System.Windows.Forms.Label();
+            this.Test2label = new System.Windows.Forms.Label();
             this.BasicPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.TopPanel.SuspendLayout();
             this.flowLayoutPanel.SuspendLayout();
             this.pythonPanel.SuspendLayout();
@@ -88,7 +101,7 @@ namespace Eduplan
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.GradesPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // BasicPanel
@@ -111,6 +124,18 @@ namespace Eduplan
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1151, 662);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.ErrorImage = global::Eduplan.Properties.Resources.icon;
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+            this.pictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.InitialImage")));
+            this.pictureBox.Location = new System.Drawing.Point(44, 35);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(181, 118);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
             // 
             // Label
             // 
@@ -142,6 +167,7 @@ namespace Eduplan
             // 
             this.flowLayoutPanel.AutoScroll = true;
             this.flowLayoutPanel.Controls.Add(this.pythonPanel);
+            this.flowLayoutPanel.Controls.Add(this.GradesPanel);
             this.flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel.Location = new System.Drawing.Point(266, 79);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
@@ -184,8 +210,68 @@ namespace Eduplan
             this.pythonPanel.Controls.Add(this.label1);
             this.pythonPanel.Location = new System.Drawing.Point(3, 3);
             this.pythonPanel.Name = "pythonPanel";
-            this.pythonPanel.Size = new System.Drawing.Size(1105, 8688);
+            this.pythonPanel.Size = new System.Drawing.Size(1105, 8585);
             this.pythonPanel.TabIndex = 0;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.ErrorImage = null;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.InitialImage = null;
+            this.pictureBox12.Location = new System.Drawing.Point(33, 6320);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(365, 224);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 34;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.ErrorImage = null;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.InitialImage = null;
+            this.pictureBox11.Location = new System.Drawing.Point(33, 6828);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(450, 229);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 33;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.ErrorImage = null;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.InitialImage = null;
+            this.pictureBox10.Location = new System.Drawing.Point(33, 7428);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(501, 317);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 32;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.ErrorImage = null;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.InitialImage = null;
+            this.pictureBox9.Location = new System.Drawing.Point(33, 5826);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(402, 229);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 31;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.ErrorImage = null;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.InitialImage = null;
+            this.pictureBox8.Location = new System.Drawing.Point(33, 7910);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(930, 609);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 30;
+            this.pictureBox8.TabStop = false;
             // 
             // label19
             // 
@@ -273,6 +359,30 @@ namespace Eduplan
             this.label14.Text = resources.GetString("label14.Text");
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.ErrorImage = null;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.InitialImage = null;
+            this.pictureBox7.Location = new System.Drawing.Point(33, 5222);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(255, 163);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 23;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 1500);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(931, 457);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -289,6 +399,18 @@ namespace Eduplan
     "\r\nαπό τις οποίες αποτελείται.\r\n\r\n";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.ErrorImage = null;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.InitialImage = null;
+            this.pictureBox6.Location = new System.Drawing.Point(33, 4645);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(627, 430);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 20;
+            this.pictureBox6.TabStop = false;
+            // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -303,6 +425,18 @@ namespace Eduplan
             this.label12.TabIndex = 19;
             this.label12.Text = "Mπορούμε να εφαρμόσουμε σε συμβολοσειρές τους τελεστές πρόσθεσης (+) και πολλπλασ" +
     "ιασμού (*).\r\n";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.ErrorImage = null;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(33, 4358);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(410, 194);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 18;
+            this.pictureBox5.TabStop = false;
             // 
             // label11
             // 
@@ -331,6 +465,18 @@ namespace Eduplan
             this.label10.Size = new System.Drawing.Size(322, 32);
             this.label10.TabIndex = 16;
             this.label10.Text = "Συμβολοσειρές (Strings)";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.ErrorImage = null;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(33, 3513);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(854, 512);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 15;
+            this.pictureBox4.TabStop = false;
             // 
             // label9
             // 
@@ -375,6 +521,18 @@ namespace Eduplan
             this.label7.Text = "Μη αποδεκτά ονόματα μεταβλητών:\r\n\r\n- 1number - αρχίζει με αριθμό.\r\n- number! - πε" +
     "ριέχει το !\r\n- class - είναι λέξη-κλειδί.\r\n\r\n";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(33, 2792);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(509, 225);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -388,6 +546,18 @@ namespace Eduplan
             this.label6.Size = new System.Drawing.Size(806, 208);
             this.label6.TabIndex = 10;
             this.label6.Text = resources.GetString("label6.Text");
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(33, 2343);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(323, 189);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
@@ -472,161 +642,23 @@ namespace Eduplan
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
             // 
-            // pictureBox12
+            // GradesPanel
             // 
-            this.pictureBox12.ErrorImage = null;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.InitialImage = null;
-            this.pictureBox12.Location = new System.Drawing.Point(33, 6320);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(365, 224);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 34;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.ErrorImage = null;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.InitialImage = null;
-            this.pictureBox11.Location = new System.Drawing.Point(33, 6828);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(450, 229);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 33;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.ErrorImage = null;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.InitialImage = null;
-            this.pictureBox10.Location = new System.Drawing.Point(33, 7428);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(501, 317);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 32;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.ErrorImage = null;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.InitialImage = null;
-            this.pictureBox9.Location = new System.Drawing.Point(33, 5826);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(402, 229);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 31;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.ErrorImage = null;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.InitialImage = null;
-            this.pictureBox8.Location = new System.Drawing.Point(33, 7910);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(930, 609);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 30;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.ErrorImage = null;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 5222);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(255, 163);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 23;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 1500);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(931, 457);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.ErrorImage = null;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(33, 4645);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(627, 430);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 20;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.ErrorImage = null;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(33, 4358);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(410, 194);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 18;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.ErrorImage = null;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(33, 3513);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(854, 512);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(33, 2792);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(509, 225);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(33, 2343);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(323, 189);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.ErrorImage = global::Eduplan.Properties.Resources.icon;
-            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
-            this.pictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.InitialImage")));
-            this.pictureBox.Location = new System.Drawing.Point(44, 35);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(181, 118);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox.TabIndex = 0;
-            this.pictureBox.TabStop = false;
+            this.GradesPanel.Controls.Add(this.Test2label);
+            this.GradesPanel.Controls.Add(this.Test3label);
+            this.GradesPanel.Controls.Add(this.Test4label);
+            this.GradesPanel.Controls.Add(this.TestMOlabel);
+            this.GradesPanel.Controls.Add(this.Test1label);
+            this.GradesPanel.Controls.Add(this.label25);
+            this.GradesPanel.Controls.Add(this.label24);
+            this.GradesPanel.Controls.Add(this.label23);
+            this.GradesPanel.Controls.Add(this.label22);
+            this.GradesPanel.Controls.Add(this.label21);
+            this.GradesPanel.Controls.Add(this.label18);
+            this.GradesPanel.Location = new System.Drawing.Point(3, 8594);
+            this.GradesPanel.Name = "GradesPanel";
+            this.GradesPanel.Size = new System.Drawing.Size(1106, 635);
+            this.GradesPanel.TabIndex = 1;
             // 
             // BathmoiButton
             // 
@@ -694,6 +726,160 @@ namespace Eduplan
             this.LessonButton.UseVisualStyleBackColor = false;
             this.LessonButton.Click += new System.EventHandler(this.LessonButton_Click);
             // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label18.Location = new System.Drawing.Point(27, 145);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(342, 31);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "Διαγώνισμα 1 - Μεταβλητές";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label21.Location = new System.Drawing.Point(481, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(193, 32);
+            this.label21.TabIndex = 31;
+            this.label21.Text = "Οι βαθμοί μου\r\n";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label22.Location = new System.Drawing.Point(27, 345);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(392, 31);
+            this.label22.TabIndex = 32;
+            this.label22.Text = "Διαγώνισμα 3 - Εντολές ελέγχου";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label23.Location = new System.Drawing.Point(27, 245);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(477, 31);
+            this.label23.TabIndex = 33;
+            this.label23.Text = "Διαγώνισμα 2 - Εντολές, Συμβολοσειρές";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label24.Location = new System.Drawing.Point(27, 445);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(429, 31);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "Τελικό Διαγώνισμα - Επαναληπτικό";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label25.Location = new System.Drawing.Point(27, 545);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(349, 31);
+            this.label25.TabIndex = 35;
+            this.label25.Text = "Μέσος όρος διαγωνισμάτων";
+            // 
+            // Test1label
+            // 
+            this.Test1label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test1label.AutoSize = true;
+            this.Test1label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test1label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test1label.Location = new System.Drawing.Point(874, 145);
+            this.Test1label.Name = "Test1label";
+            this.Test1label.Size = new System.Drawing.Size(52, 31);
+            this.Test1label.TabIndex = 36;
+            this.Test1label.Text = "/10";
+            // 
+            // TestMOlabel
+            // 
+            this.TestMOlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TestMOlabel.AutoSize = true;
+            this.TestMOlabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestMOlabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.TestMOlabel.Location = new System.Drawing.Point(874, 545);
+            this.TestMOlabel.Name = "TestMOlabel";
+            this.TestMOlabel.Size = new System.Drawing.Size(52, 31);
+            this.TestMOlabel.TabIndex = 37;
+            this.TestMOlabel.Text = "/10";
+            // 
+            // Test4label
+            // 
+            this.Test4label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test4label.AutoSize = true;
+            this.Test4label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test4label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test4label.Location = new System.Drawing.Point(874, 445);
+            this.Test4label.Name = "Test4label";
+            this.Test4label.Size = new System.Drawing.Size(52, 31);
+            this.Test4label.TabIndex = 38;
+            this.Test4label.Text = "/10";
+            // 
+            // Test3label
+            // 
+            this.Test3label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test3label.AutoSize = true;
+            this.Test3label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test3label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test3label.Location = new System.Drawing.Point(874, 345);
+            this.Test3label.Name = "Test3label";
+            this.Test3label.Size = new System.Drawing.Size(52, 31);
+            this.Test3label.TabIndex = 39;
+            this.Test3label.Text = "/10";
+            // 
+            // Test2label
+            // 
+            this.Test2label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test2label.AutoSize = true;
+            this.Test2label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test2label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test2label.Location = new System.Drawing.Point(874, 245);
+            this.Test2label.Name = "Test2label";
+            this.Test2label.Size = new System.Drawing.Size(52, 31);
+            this.Test2label.TabIndex = 40;
+            this.Test2label.Text = "/10";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -710,6 +896,7 @@ namespace Eduplan
             this.Text = "Python+";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.BasicPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.flowLayoutPanel.ResumeLayout(false);
@@ -727,7 +914,8 @@ namespace Eduplan
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.GradesPanel.ResumeLayout(false);
+            this.GradesPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -776,6 +964,18 @@ namespace Eduplan
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel GradesPanel;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label Test2label;
+        private System.Windows.Forms.Label Test3label;
+        private System.Windows.Forms.Label Test4label;
+        private System.Windows.Forms.Label TestMOlabel;
+        private System.Windows.Forms.Label Test1label;
+        private System.Windows.Forms.Label label25;
     }
 }
 
