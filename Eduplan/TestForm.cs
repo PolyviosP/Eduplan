@@ -1,12 +1,6 @@
-﻿using DocumentFormat.OpenXml.Office2010.Excel;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Eduplan
@@ -64,7 +58,6 @@ namespace Eduplan
 
             int vath = Functions.TestResults(D1_Checkboxes, D1);
             Console.WriteLine(vath);
-            
         }
         private void FinishTest2Button_Click(object sender, EventArgs e)
         {
@@ -76,16 +69,16 @@ namespace Eduplan
         }
         private void FinishTest3Button_Click(object sender, EventArgs e)
         {
-            List<CheckedListBox> D3_Checkboxes = new List<CheckedListBox>() {  };
-            List<string> D3 = new List<string>() {  };
+            List<CheckedListBox> D3_Checkboxes = new List<CheckedListBox>() { D3ListBox1, D3ListBox2, D3ListBox3, D3ListBox4, D3ListBox5 };
+            List<string> D3 = new List<string>() { "Error", "20", "True η False", "2", "error" };
 
             int vath = Functions.TestResults(D3_Checkboxes, D3);
             Console.WriteLine(vath);
         }
         private void FinishFinalTestButton_Click(object sender, EventArgs e)
         {
-            List<CheckedListBox> DF_Checkboxes = new List<CheckedListBox>() {  };
-            List<string> DF = new List<string>() {  };
+            List<CheckedListBox> DF_Checkboxes = new List<CheckedListBox>() { DFListBox1, DFListBox2, DFListBox3, DFListBox4, DFListBox5 };
+            List<string> DF = new List<string>() { "GEIAGEIA", "false", "string", "3", "False" };
 
             int vath = Functions.TestResults(DF_Checkboxes, DF);
             Console.WriteLine(vath);
@@ -93,6 +86,106 @@ namespace Eduplan
         private void TestForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Functions.CloseProgram(sender, e);
+        }
+
+        private void D1ListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D1ListBox1, e);
+        }
+
+        private void D1ListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D1ListBox2, e);
+        }
+
+        private void D1ListBox3_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D1ListBox3, e);
+        }
+
+        private void D1ListBox4_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D1ListBox4, e);
+        }
+
+        private void D1ListBox5_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D1ListBox5, e);
+        }
+
+        private void D2ListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D2ListBox1, e);
+        }
+
+        private void D2ListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D2ListBox2, e);
+        }
+
+        private void D2ListBox3_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D2ListBox3, e);
+        }
+
+        private void D2ListBox4_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D2ListBox4, e);
+        }
+
+        private void D2ListBox5_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D2ListBox5, e);
+        }
+
+        private void D3ListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D3ListBox1, e);
+        }
+
+        private void D3ListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D3ListBox2, e);
+        }
+
+        private void D3ListBox3_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D3ListBox3, e);
+        }
+
+        private void D3ListBox4_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D3ListBox4, e);
+        }
+
+        private void D3ListBox5_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(D3ListBox5, e);
+        }
+
+        private void DFListBox1_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(DFListBox1, e);
+        }
+
+        private void DFListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(DFListBox2, e);
+        }
+
+        private void DFListBox3_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(DFListBox3, e);
+        }
+
+        private void DFListBox4_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(DFListBox4, e);
+        }
+
+        private void DFListBox5_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            Functions.ItemCheck(DFListBox5, e);
         }
     }
 }

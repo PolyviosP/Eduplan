@@ -1772,6 +1772,44 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Ερώτηση 5
+
+Τι μας εμφανίζει αυτή η εντολή:
+
+B = 5
+if B % 2 == 0:
+      print(B)
+elif B % 2 - 5 == 0:
+      print(5)
+elif B % 2 - 10 == 1:
+      print(10)
+else:
+      print("error")
+
+
+
+
+
+
+</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Ερώτηση 5
+
+Τι μας εμφανίζει αυτή η εντολή:
+
+A = 10
+if str(A) == 10:
+      print("True")
+elif False:
+      print("true")
+elif A &lt;= 10:
+      A = False
+      print(A)
+else:
+      print("false")</value>
+  </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

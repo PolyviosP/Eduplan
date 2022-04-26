@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Eduplan
 {
     class Functions
     {
-
-        
         public static int TestResults(List<CheckedListBox> Box, List<string> L)
         {
             try
@@ -44,7 +39,12 @@ namespace Eduplan
             }
             catch { return 0; }
         }
-
+        public static void ItemCheck(CheckedListBox Box, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < Box.Items.Count; ++ix)
+                if (ix != e.Index)
+                    Box.SetItemChecked(ix, false);
+        }
         public static void CloseProgram(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
