@@ -659,6 +659,7 @@ namespace Eduplan
             this.GradesPanel.Name = "GradesPanel";
             this.GradesPanel.Size = new System.Drawing.Size(1106, 635);
             this.GradesPanel.TabIndex = 1;
+            this.GradesPanel.Visible = false;
             // 
             // Test2label
             // 
@@ -889,6 +890,7 @@ namespace Eduplan
             this.Controls.Add(this.flowLayoutPanel);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.BasicPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";

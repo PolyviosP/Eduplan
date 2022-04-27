@@ -217,6 +217,7 @@ namespace Eduplan
             this.Controls.Add(this.ShowPasswordBox);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.EmailBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

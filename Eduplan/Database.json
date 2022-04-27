@@ -1,4 +1,11 @@
 [
-  
+  {
+    "Email": "admin",
+    "Password": "admin",
+    "Test1Grade": 0,
+    "Test2Grade": 0,
+    "Test3Grade": 0,
+    "TestFinalGrade": 0
+  }
 ]
 
