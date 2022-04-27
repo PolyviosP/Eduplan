@@ -33,7 +33,7 @@ namespace Eduplan
             this.BasicPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.Label = new System.Windows.Forms.Label();
+            this.LabelLogin = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.pythonPanel = new System.Windows.Forms.Panel();
@@ -70,20 +70,20 @@ namespace Eduplan
             this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.GradesPanel = new System.Windows.Forms.Panel();
+            this.Test2label = new System.Windows.Forms.Label();
+            this.Test3label = new System.Windows.Forms.Label();
+            this.Test4label = new System.Windows.Forms.Label();
+            this.TestMOlabel = new System.Windows.Forms.Label();
+            this.Test1label = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.BathmoiButton = new ePOSOne.btnProduct.Button_WOC();
             this.DiagonismataButton = new ePOSOne.btnProduct.Button_WOC();
             this.LessonButton = new ePOSOne.btnProduct.Button_WOC();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.Test1label = new System.Windows.Forms.Label();
-            this.TestMOlabel = new System.Windows.Forms.Label();
-            this.Test4label = new System.Windows.Forms.Label();
-            this.Test3label = new System.Windows.Forms.Label();
-            this.Test2label = new System.Windows.Forms.Label();
             this.BasicPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -137,25 +137,25 @@ namespace Eduplan
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             // 
-            // Label
+            // LabelLogin
             // 
-            this.Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LabelLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label.AutoSize = true;
-            this.Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Label.Location = new System.Drawing.Point(31, 24);
-            this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(185, 26);
-            this.Label.TabIndex = 0;
-            this.Label.Text = "Συνδεδεμένος ως";
-            this.Label.Click += new System.EventHandler(this.Label_Click);
+            this.LabelLogin.AutoSize = true;
+            this.LabelLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LabelLogin.Location = new System.Drawing.Point(31, 24);
+            this.LabelLogin.Name = "LabelLogin";
+            this.LabelLogin.Size = new System.Drawing.Size(191, 26);
+            this.LabelLogin.TabIndex = 0;
+            this.LabelLogin.Text = "Συνδεδεμένος ως:";
+            this.LabelLogin.Click += new System.EventHandler(this.Label_Click);
             // 
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.TopPanel.Controls.Add(this.Label);
+            this.TopPanel.Controls.Add(this.LabelLogin);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.TopPanel.Location = new System.Drawing.Point(266, 0);
@@ -660,6 +660,160 @@ namespace Eduplan
             this.GradesPanel.Size = new System.Drawing.Size(1106, 635);
             this.GradesPanel.TabIndex = 1;
             // 
+            // Test2label
+            // 
+            this.Test2label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test2label.AutoSize = true;
+            this.Test2label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test2label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test2label.Location = new System.Drawing.Point(874, 245);
+            this.Test2label.Name = "Test2label";
+            this.Test2label.Size = new System.Drawing.Size(66, 31);
+            this.Test2label.TabIndex = 40;
+            this.Test2label.Text = "0/10";
+            // 
+            // Test3label
+            // 
+            this.Test3label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test3label.AutoSize = true;
+            this.Test3label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test3label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test3label.Location = new System.Drawing.Point(874, 345);
+            this.Test3label.Name = "Test3label";
+            this.Test3label.Size = new System.Drawing.Size(66, 31);
+            this.Test3label.TabIndex = 39;
+            this.Test3label.Text = "0/10";
+            // 
+            // Test4label
+            // 
+            this.Test4label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test4label.AutoSize = true;
+            this.Test4label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test4label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test4label.Location = new System.Drawing.Point(874, 445);
+            this.Test4label.Name = "Test4label";
+            this.Test4label.Size = new System.Drawing.Size(66, 31);
+            this.Test4label.TabIndex = 38;
+            this.Test4label.Text = "0/10";
+            // 
+            // TestMOlabel
+            // 
+            this.TestMOlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TestMOlabel.AutoSize = true;
+            this.TestMOlabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestMOlabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.TestMOlabel.Location = new System.Drawing.Point(874, 545);
+            this.TestMOlabel.Name = "TestMOlabel";
+            this.TestMOlabel.Size = new System.Drawing.Size(66, 31);
+            this.TestMOlabel.TabIndex = 37;
+            this.TestMOlabel.Text = "0/10";
+            // 
+            // Test1label
+            // 
+            this.Test1label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test1label.AutoSize = true;
+            this.Test1label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Test1label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Test1label.Location = new System.Drawing.Point(874, 145);
+            this.Test1label.Name = "Test1label";
+            this.Test1label.Size = new System.Drawing.Size(66, 31);
+            this.Test1label.TabIndex = 36;
+            this.Test1label.Text = "0/10";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label25.Location = new System.Drawing.Point(27, 545);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(349, 31);
+            this.label25.TabIndex = 35;
+            this.label25.Text = "Μέσος όρος διαγωνισμάτων";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label24.Location = new System.Drawing.Point(27, 445);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(429, 31);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "Τελικό Διαγώνισμα - Επαναληπτικό";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label23.Location = new System.Drawing.Point(27, 245);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(477, 31);
+            this.label23.TabIndex = 33;
+            this.label23.Text = "Διαγώνισμα 2 - Εντολές, Συμβολοσειρές";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label22.Location = new System.Drawing.Point(27, 345);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(392, 31);
+            this.label22.TabIndex = 32;
+            this.label22.Text = "Διαγώνισμα 3 - Εντολές ελέγχου";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label21.Location = new System.Drawing.Point(481, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(193, 32);
+            this.label21.TabIndex = 31;
+            this.label21.Text = "Οι βαθμοί μου\r\n";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label18.Location = new System.Drawing.Point(27, 145);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(342, 31);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "Διαγώνισμα 1 - Μεταβλητές";
+            // 
             // BathmoiButton
             // 
             this.BathmoiButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
@@ -726,160 +880,6 @@ namespace Eduplan
             this.LessonButton.UseVisualStyleBackColor = false;
             this.LessonButton.Click += new System.EventHandler(this.LessonButton_Click);
             // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label18.Location = new System.Drawing.Point(27, 145);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(342, 31);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "Διαγώνισμα 1 - Μεταβλητές";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label21.Location = new System.Drawing.Point(481, 16);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(193, 32);
-            this.label21.TabIndex = 31;
-            this.label21.Text = "Οι βαθμοί μου\r\n";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label22.Location = new System.Drawing.Point(27, 345);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(392, 31);
-            this.label22.TabIndex = 32;
-            this.label22.Text = "Διαγώνισμα 3 - Εντολές ελέγχου";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label23.Location = new System.Drawing.Point(27, 245);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(477, 31);
-            this.label23.TabIndex = 33;
-            this.label23.Text = "Διαγώνισμα 2 - Εντολές, Συμβολοσειρές";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label24.Location = new System.Drawing.Point(27, 445);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(429, 31);
-            this.label24.TabIndex = 34;
-            this.label24.Text = "Τελικό Διαγώνισμα - Επαναληπτικό";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label25.Location = new System.Drawing.Point(27, 545);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(349, 31);
-            this.label25.TabIndex = 35;
-            this.label25.Text = "Μέσος όρος διαγωνισμάτων";
-            // 
-            // Test1label
-            // 
-            this.Test1label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Test1label.AutoSize = true;
-            this.Test1label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test1label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Test1label.Location = new System.Drawing.Point(874, 145);
-            this.Test1label.Name = "Test1label";
-            this.Test1label.Size = new System.Drawing.Size(52, 31);
-            this.Test1label.TabIndex = 36;
-            this.Test1label.Text = "/10";
-            // 
-            // TestMOlabel
-            // 
-            this.TestMOlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TestMOlabel.AutoSize = true;
-            this.TestMOlabel.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TestMOlabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TestMOlabel.Location = new System.Drawing.Point(874, 545);
-            this.TestMOlabel.Name = "TestMOlabel";
-            this.TestMOlabel.Size = new System.Drawing.Size(52, 31);
-            this.TestMOlabel.TabIndex = 37;
-            this.TestMOlabel.Text = "/10";
-            // 
-            // Test4label
-            // 
-            this.Test4label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Test4label.AutoSize = true;
-            this.Test4label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test4label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Test4label.Location = new System.Drawing.Point(874, 445);
-            this.Test4label.Name = "Test4label";
-            this.Test4label.Size = new System.Drawing.Size(52, 31);
-            this.Test4label.TabIndex = 38;
-            this.Test4label.Text = "/10";
-            // 
-            // Test3label
-            // 
-            this.Test3label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Test3label.AutoSize = true;
-            this.Test3label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test3label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Test3label.Location = new System.Drawing.Point(874, 345);
-            this.Test3label.Name = "Test3label";
-            this.Test3label.Size = new System.Drawing.Size(52, 31);
-            this.Test3label.TabIndex = 39;
-            this.Test3label.Text = "/10";
-            // 
-            // Test2label
-            // 
-            this.Test2label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Test2label.AutoSize = true;
-            this.Test2label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Test2label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Test2label.Location = new System.Drawing.Point(874, 245);
-            this.Test2label.Name = "Test2label";
-            this.Test2label.Size = new System.Drawing.Size(52, 31);
-            this.Test2label.TabIndex = 40;
-            this.Test2label.Text = "/10";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -892,9 +892,10 @@ namespace Eduplan
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Python+";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.BasicPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.TopPanel.ResumeLayout(false);
@@ -923,7 +924,7 @@ namespace Eduplan
         #endregion
 
         private System.Windows.Forms.Panel BasicPanel;
-        private System.Windows.Forms.Label Label;
+        private System.Windows.Forms.Label LabelLogin;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.Panel panel1;

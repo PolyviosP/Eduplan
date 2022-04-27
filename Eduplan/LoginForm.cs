@@ -21,9 +21,19 @@ namespace Eduplan
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            mainform.Location = new Point(this.Location.X, this.Location.Y);
-            mainform.Show();
+            if (User.ReceiveDataForLogin(EmailBox.Text.Trim(), PasswordBox.Text.Trim()))
+            {
+                Functions.loginAs = EmailBox.Text.Trim();
+                
+                this.Hide();
+                mainform.Location = new Point(this.Location.X, this.Location.Y);
+                mainform.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("To Email ή ο Κωδικός πρόσβασης είναι λάθος", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void EmailBox_Enter(object sender, EventArgs e)

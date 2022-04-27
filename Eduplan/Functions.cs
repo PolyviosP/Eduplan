@@ -6,6 +6,7 @@ namespace Eduplan
 {
     class Functions
     {
+        public static string loginAs = "polios@gmail.com";
         public static int TestResults(List<CheckedListBox> Box, List<string> L)
         {
             try
@@ -50,6 +51,18 @@ namespace Eduplan
             if (e.CloseReason == CloseReason.UserClosing)
             {
                 Environment.Exit(0);
+            }
+        }
+        public static void FixLabel(Label label)
+        {
+            if (label.Text.Length == 5)
+            {
+                label.Text = label.Text.Remove(0, 2);
+                
+            }
+            else if (label.Text.Length == 4)
+            {
+                label.Text = label.Text.Remove(0, 1);
             }
         }
     }
