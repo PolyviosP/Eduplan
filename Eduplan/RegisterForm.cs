@@ -10,31 +10,25 @@ using System.Windows.Forms;
 
 namespace Eduplan
 {
-    public partial class LoginForm : Form
+    public partial class RegisterForm : Form
     {
-        MainForm mainform = new MainForm();
-        RegisterForm registerform = new RegisterForm();
-
-        public LoginForm()
+        public RegisterForm()
         {
             InitializeComponent();
             textview.Select();
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
+        private void RegisterButton_Click(object sender, EventArgs e)
         {
-            if (User.ReceiveDataForLogin(EmailBox.Text.Trim(), PasswordBox.Text.Trim()))
+            if (EmailBox.Text.Trim() != "Email" && PasswordBox.Text.Trim() == VerifyPasswordBox.Text.Trim() && PasswordBox.Text.Trim() != "Κωδικός πρόσβασης")
             {
-                Functions.loginAs = EmailBox.Text.Trim();
-                
+                User.WriteData(EmailBox.Text.Trim(), PasswordBox.Text.Trim());
+                MessageBox.Show("Η Εγγραφή σας ήταν επιτυχής.", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                mainform.Location = new Point(this.Location.X, this.Location.Y);
-                mainform.Show();
-
             }
-            else
+            else if (PasswordBox.Text.Trim() == VerifyPasswordBox.Text.Trim())
             {
-                MessageBox.Show("To Email ή ο Κωδικός πρόσβασης είναι λάθος", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ο Κωδικός πρόσβασης και ο επιβεβαίωσης Κωδικός πρόσβασης δεν είναι ίδιοι.", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -76,6 +70,26 @@ namespace Eduplan
             }
         }
 
+        private void VerifyPasswordBox_Enter(object sender, EventArgs e)
+        {
+            if (VerifyPasswordBox.Text == "Κωδικός πρόσβασης")
+            {
+                VerifyPasswordBox.Text = "";
+                VerifyPasswordBox.ForeColor = Color.White;
+                VerifyPasswordBox.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void VerifyPasswordBox_Leave(object sender, EventArgs e)
+        {
+            if (VerifyPasswordBox.Text == "")
+            {
+                VerifyPasswordBox.Text = "Κωδικός πρόσβασης";
+                VerifyPasswordBox.ForeColor = Color.Gray;
+                VerifyPasswordBox.UseSystemPasswordChar = false;
+            }
+        }
+
         private void ShowPasswordBox_Click(object sender, EventArgs e)
         {
             if (PasswordBox.UseSystemPasswordChar == true)
@@ -92,14 +106,10 @@ namespace Eduplan
             }
         }
 
-        private void Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            registerform.Show();
-        }
-
-        private void LoginForm_Activated(object sender, EventArgs e)
-        {
-            registerform.Hide();
+            e.Cancel = true;
+            this.Hide();
         }
     }
 }

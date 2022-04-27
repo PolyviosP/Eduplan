@@ -57,15 +57,16 @@ namespace Eduplan
             List<string> D1 = new List<string>() { "Όχι", "Value", "bool", "50", "Όλα τα παραπάνω" };
 
             int vath = Functions.TestResults(D1_Checkboxes, D1);
-            Console.WriteLine(vath);
+            User.WriteSpecificGrade(Functions.loginAs, vath, "Test1Grade");
         }
         private void FinishTest2Button_Click(object sender, EventArgs e)
         {
+            
             List<CheckedListBox> D2_Checkboxes = new List<CheckedListBox>() { D2ListBox1, D2ListBox2, D2ListBox3, D2ListBox4, D2ListBox5 };
             List<string> D2 = new List<string>() { "Hello World", "Geia", @"print(A + "" "" + B)", "21", "10"};
 
             int vath = Functions.TestResults(D2_Checkboxes, D2);
-            Console.WriteLine(vath);
+            User.WriteSpecificGrade(Functions.loginAs, vath, "Test2Grade");
         }
         private void FinishTest3Button_Click(object sender, EventArgs e)
         {
@@ -73,7 +74,7 @@ namespace Eduplan
             List<string> D3 = new List<string>() { "Error", "20", "True η False", "2", "error" };
 
             int vath = Functions.TestResults(D3_Checkboxes, D3);
-            Console.WriteLine(vath);
+            User.WriteSpecificGrade(Functions.loginAs, vath, "Test3Grade");
         }
         private void FinishFinalTestButton_Click(object sender, EventArgs e)
         {
@@ -81,7 +82,7 @@ namespace Eduplan
             List<string> DF = new List<string>() { "GEIAGEIA", "false", "string", "3", "False" };
 
             int vath = Functions.TestResults(DF_Checkboxes, DF);
-            Console.WriteLine(vath);
+            User.WriteSpecificGrade(Functions.loginAs, vath, "TestFinalGrade");
         }
         private void TestForm_FormClosing(object sender, FormClosingEventArgs e)
         {

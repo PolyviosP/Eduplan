@@ -54,24 +54,52 @@ namespace Eduplan
         }
         public static void WriteData(string email, string password)
         {
-            using (StreamReader r = new StreamReader(Directory.GetCurrentDirectory() + @"\Database.json"))
+            string json = File.ReadAllText(Directory.GetCurrentDirectory() + @"\Database.json");
+
+            var employeeList = JsonConvert.DeserializeObject<List<Person>>(json) ?? new List<Person>();
+
+            employeeList.Add(new Person()
             {
-                string json = r.ReadToEnd();
-                var employeeList = JsonConvert.DeserializeObject<List<Person>>(json) ?? new List<Person>();
+                Email = email,
+                Password = password,
+                Test1Grade = 0,
+                Test2Grade = 0,
+                Test3Grade = 0,
+                TestFinalGrade = 0
+            });
 
-                employeeList.Add(new Person()
+            json = JsonConvert.SerializeObject(employeeList, Newtonsoft.Json.Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            File.WriteAllText(Directory.GetCurrentDirectory() + @"\Database.json", json);
+        }
+        public static void WriteSpecificGrade(string email, int grade, string test)
+        {
+            string json = File.ReadAllText(Directory.GetCurrentDirectory() + @"\Database.json");
+
+            dynamic Data = JsonConvert.DeserializeObject(json);
+            foreach (var value in Data)
+            {
+                if (value.Email.ToString() == email)
                 {
-                    Email = email,
-                    Password = password,
-                    Test1Grade = 0,
-                    Test2Grade = 0,
-                    Test3Grade = 0,
-                    TestFinalGrade = 0
-                });
-
-                json = JsonConvert.SerializeObject(employeeList, Newtonsoft.Json.Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-                File.WriteAllText(Directory.GetCurrentDirectory() + @"\Database.json", json);
+                    if ("Test1Grade" == test)
+                    {
+                        value.Test1Grade = grade;
+                    }
+                    else if ("Test2Grade" == test)
+                    {
+                        value.Test2Grade = grade;
+                    }
+                    else if ("Test3Grade" == test)
+                    {
+                        value.Test3Grade = grade;
+                    }
+                    else if ("TestFinalGrade" == test)
+                    {
+                        value.TestFinalGrade = grade;
+                    }
+                }
             }
+            string output = JsonConvert.SerializeObject(Data, Newtonsoft.Json.Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            File.WriteAllText(Directory.GetCurrentDirectory() + @"\Database.json", output);
         }
     }
 }
