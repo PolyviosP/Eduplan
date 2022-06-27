@@ -6,7 +6,8 @@ namespace Eduplan
 {
     class Functions
     {
-        public static string loginAs = "polios@gmail.com";
+        public static string loginAs;
+
         public static int TestResults(List<CheckedListBox> Box, List<string> L)
         {
             try

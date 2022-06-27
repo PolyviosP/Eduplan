@@ -81,6 +81,14 @@ namespace Eduplan
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.panelVideo = new System.Windows.Forms.Panel();
+            this.video3 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.video2 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.video1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.VideoButton = new ePOSOne.btnProduct.Button_WOC();
             this.BathmoiButton = new ePOSOne.btnProduct.Button_WOC();
             this.DiagonismataButton = new ePOSOne.btnProduct.Button_WOC();
             this.LessonButton = new ePOSOne.btnProduct.Button_WOC();
@@ -102,11 +110,16 @@ namespace Eduplan
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.GradesPanel.SuspendLayout();
+            this.panelVideo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video1)).BeginInit();
             this.SuspendLayout();
             // 
             // BasicPanel
             // 
             this.BasicPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BasicPanel.Controls.Add(this.VideoButton);
             this.BasicPanel.Controls.Add(this.BathmoiButton);
             this.BasicPanel.Controls.Add(this.DiagonismataButton);
             this.BasicPanel.Controls.Add(this.LessonButton);
@@ -168,6 +181,7 @@ namespace Eduplan
             this.flowLayoutPanel.AutoScroll = true;
             this.flowLayoutPanel.Controls.Add(this.pythonPanel);
             this.flowLayoutPanel.Controls.Add(this.GradesPanel);
+            this.flowLayoutPanel.Controls.Add(this.panelVideo);
             this.flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel.Location = new System.Drawing.Point(266, 79);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
@@ -212,6 +226,7 @@ namespace Eduplan
             this.pythonPanel.Name = "pythonPanel";
             this.pythonPanel.Size = new System.Drawing.Size(1105, 8585);
             this.pythonPanel.TabIndex = 0;
+            this.pythonPanel.Visible = false;
             // 
             // pictureBox12
             // 
@@ -312,7 +327,7 @@ namespace Eduplan
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label17.Location = new System.Drawing.Point(394, 5491);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(398, 32);
+            this.label17.Size = new System.Drawing.Size(397, 32);
             this.label17.TabIndex = 27;
             this.label17.Text = "Κεφάλαιο 3 - Εντολές ελέγχου";
             // 
@@ -462,7 +477,7 @@ namespace Eduplan
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label10.Location = new System.Drawing.Point(396, 4102);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(322, 32);
+            this.label10.Size = new System.Drawing.Size(321, 32);
             this.label10.TabIndex = 16;
             this.label10.Text = "Συμβολοσειρές (Strings)";
             // 
@@ -502,7 +517,7 @@ namespace Eduplan
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label8.Location = new System.Drawing.Point(406, 3264);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(287, 32);
+            this.label8.Size = new System.Drawing.Size(286, 32);
             this.label8.TabIndex = 13;
             this.label8.Text = "Κεφάλαιο 2 - Εντολές";
             // 
@@ -598,7 +613,7 @@ namespace Eduplan
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label3.Location = new System.Drawing.Point(370, 1277);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(337, 32);
+            this.label3.Size = new System.Drawing.Size(336, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "Κεφάλαιο 1 - Μεταβλητές";
             // 
@@ -612,7 +627,7 @@ namespace Eduplan
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(406, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(301, 32);
+            this.label2.Size = new System.Drawing.Size(300, 32);
             this.label2.TabIndex = 4;
             this.label2.Text = "Εισαγωγή στην Python";
             // 
@@ -797,7 +812,7 @@ namespace Eduplan
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label21.Location = new System.Drawing.Point(481, 16);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(193, 32);
+            this.label21.Size = new System.Drawing.Size(192, 32);
             this.label21.TabIndex = 31;
             this.label21.Text = "Οι βαθμοί μου\r\n";
             // 
@@ -815,6 +830,110 @@ namespace Eduplan
             this.label18.TabIndex = 30;
             this.label18.Text = "Διαγώνισμα 1 - Μεταβλητές";
             // 
+            // panelVideo
+            // 
+            this.panelVideo.Controls.Add(this.video3);
+            this.panelVideo.Controls.Add(this.video2);
+            this.panelVideo.Controls.Add(this.video1);
+            this.panelVideo.Controls.Add(this.label28);
+            this.panelVideo.Controls.Add(this.label27);
+            this.panelVideo.Controls.Add(this.label26);
+            this.panelVideo.Location = new System.Drawing.Point(3, 9235);
+            this.panelVideo.Name = "panelVideo";
+            this.panelVideo.Size = new System.Drawing.Size(1106, 2039);
+            this.panelVideo.TabIndex = 2;
+            // 
+            // video3
+            // 
+            this.video3.Enabled = true;
+            this.video3.Location = new System.Drawing.Point(104, 1435);
+            this.video3.Name = "video3";
+            this.video3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video3.OcxState")));
+            this.video3.Size = new System.Drawing.Size(941, 517);
+            this.video3.TabIndex = 40;
+            // 
+            // video2
+            // 
+            this.video2.Enabled = true;
+            this.video2.Location = new System.Drawing.Point(104, 759);
+            this.video2.Name = "video2";
+            this.video2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video2.OcxState")));
+            this.video2.Size = new System.Drawing.Size(941, 517);
+            this.video2.TabIndex = 39;
+            // 
+            // video1
+            // 
+            this.video1.Enabled = true;
+            this.video1.Location = new System.Drawing.Point(104, 114);
+            this.video1.Name = "video1";
+            this.video1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video1.OcxState")));
+            this.video1.Size = new System.Drawing.Size(941, 517);
+            this.video1.TabIndex = 38;
+            // 
+            // label28
+            // 
+            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label28.Location = new System.Drawing.Point(481, 1360);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(233, 32);
+            this.label28.TabIndex = 37;
+            this.label28.Text = "If - else συνθήκες";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label27.Location = new System.Drawing.Point(492, 684);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(170, 32);
+            this.label27.TabIndex = 35;
+            this.label27.Text = "Μεταβλητές";
+            // 
+            // label26
+            // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label26.Location = new System.Drawing.Point(406, 36);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(343, 32);
+            this.label26.TabIndex = 32;
+            this.label26.Text = "Ξεκινώντας με την Python";
+            // 
+            // VideoButton
+            // 
+            this.VideoButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VideoButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VideoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.Location = new System.Drawing.Point(6, 206);
+            this.VideoButton.Name = "VideoButton";
+            this.VideoButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.VideoButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.VideoButton.Size = new System.Drawing.Size(260, 90);
+            this.VideoButton.TabIndex = 10;
+            this.VideoButton.Text = "Βίντεο εκμάθησεις";
+            this.VideoButton.TextColor = System.Drawing.Color.White;
+            this.VideoButton.UseVisualStyleBackColor = false;
+            this.VideoButton.Click += new System.EventHandler(this.VideoButton_Click);
+            // 
             // BathmoiButton
             // 
             this.BathmoiButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
@@ -825,7 +944,7 @@ namespace Eduplan
             this.BathmoiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BathmoiButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BathmoiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.Location = new System.Drawing.Point(3, 433);
+            this.BathmoiButton.Location = new System.Drawing.Point(6, 494);
             this.BathmoiButton.Name = "BathmoiButton";
             this.BathmoiButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
             this.BathmoiButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
@@ -847,7 +966,7 @@ namespace Eduplan
             this.DiagonismataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DiagonismataButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiagonismataButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.Location = new System.Drawing.Point(3, 337);
+            this.DiagonismataButton.Location = new System.Drawing.Point(6, 398);
             this.DiagonismataButton.Name = "DiagonismataButton";
             this.DiagonismataButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
             this.DiagonismataButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
@@ -869,14 +988,14 @@ namespace Eduplan
             this.LessonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LessonButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LessonButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.Location = new System.Drawing.Point(3, 241);
+            this.LessonButton.Location = new System.Drawing.Point(6, 302);
             this.LessonButton.Name = "LessonButton";
             this.LessonButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
             this.LessonButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
             this.LessonButton.OnHoverTextColor = System.Drawing.Color.White;
             this.LessonButton.Size = new System.Drawing.Size(260, 90);
             this.LessonButton.TabIndex = 7;
-            this.LessonButton.Text = "Μαθήματα";
+            this.LessonButton.Text = "Κεφάλαια";
             this.LessonButton.TextColor = System.Drawing.Color.White;
             this.LessonButton.UseVisualStyleBackColor = false;
             this.LessonButton.Click += new System.EventHandler(this.LessonButton_Click);
@@ -919,6 +1038,11 @@ namespace Eduplan
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.GradesPanel.ResumeLayout(false);
             this.GradesPanel.PerformLayout();
+            this.panelVideo.ResumeLayout(false);
+            this.panelVideo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -979,6 +1103,14 @@ namespace Eduplan
         private System.Windows.Forms.Label TestMOlabel;
         private System.Windows.Forms.Label Test1label;
         private System.Windows.Forms.Label label25;
+        private ePOSOne.btnProduct.Button_WOC VideoButton;
+        private System.Windows.Forms.Panel panelVideo;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private AxWMPLib.AxWindowsMediaPlayer video3;
+        private AxWMPLib.AxWindowsMediaPlayer video2;
+        private AxWMPLib.AxWindowsMediaPlayer video1;
     }
 }
 

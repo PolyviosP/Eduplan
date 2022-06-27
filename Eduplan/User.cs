@@ -46,6 +46,7 @@ namespace Eduplan
                 {
                     if (value.Email == email && value.Password == password)
                     {
+                        Functions.loginAs = email;
                         return true; 
                     }
                 }

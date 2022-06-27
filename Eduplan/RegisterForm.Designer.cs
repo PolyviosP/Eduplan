@@ -95,7 +95,7 @@ namespace Eduplan
             this.PasswordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(281, 37);
-            this.PasswordBox.TabIndex = 49;
+            this.PasswordBox.TabIndex = 2;
             this.PasswordBox.Text = "Κωδικός πρόσβασης";
             this.PasswordBox.Enter += new System.EventHandler(this.PasswordBox_Enter);
             this.PasswordBox.Leave += new System.EventHandler(this.PasswordBox_Leave);
@@ -110,7 +110,7 @@ namespace Eduplan
             this.EmailBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmailBox.Name = "EmailBox";
             this.EmailBox.Size = new System.Drawing.Size(281, 37);
-            this.EmailBox.TabIndex = 48;
+            this.EmailBox.TabIndex = 1;
             this.EmailBox.Text = "Email";
             this.EmailBox.Enter += new System.EventHandler(this.EmailBox_Enter);
             this.EmailBox.Leave += new System.EventHandler(this.EmailBox_Leave);
@@ -140,7 +140,7 @@ namespace Eduplan
             this.VerifyPasswordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerifyPasswordBox.Name = "VerifyPasswordBox";
             this.VerifyPasswordBox.Size = new System.Drawing.Size(281, 37);
-            this.VerifyPasswordBox.TabIndex = 53;
+            this.VerifyPasswordBox.TabIndex = 3;
             this.VerifyPasswordBox.Text = "Κωδικός πρόσβασης";
             this.VerifyPasswordBox.Enter += new System.EventHandler(this.VerifyPasswordBox_Enter);
             this.VerifyPasswordBox.Leave += new System.EventHandler(this.VerifyPasswordBox_Leave);
