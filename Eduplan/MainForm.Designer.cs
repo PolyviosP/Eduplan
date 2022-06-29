@@ -846,11 +846,7 @@ namespace Eduplan
             this.panelVideo.Controls.Add(this.label26);
             this.panelVideo.Location = new System.Drawing.Point(3, 9235);
             this.panelVideo.Name = "panelVideo";
-<<<<<<< HEAD
-            this.panelVideo.Size = new System.Drawing.Size(1126, 2393);
-=======
-            this.panelVideo.Size = new System.Drawing.Size(1106, 2059);
->>>>>>> d8558d4fc05a7f85bdf06cb91a63c4c012478989
+            this.panelVideo.Size = new System.Drawing.Size(1106, 2249);
             this.panelVideo.TabIndex = 2;
             // 
             // video3
