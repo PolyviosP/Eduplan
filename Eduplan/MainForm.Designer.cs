@@ -31,10 +31,6 @@ namespace Eduplan
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.BasicPanel = new System.Windows.Forms.Panel();
-            this.VideoButton = new ePOSOne.btnProduct.Button_WOC();
-            this.BathmoiButton = new ePOSOne.btnProduct.Button_WOC();
-            this.DiagonismataButton = new ePOSOne.btnProduct.Button_WOC();
-            this.LessonButton = new ePOSOne.btnProduct.Button_WOC();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.LabelLogin = new System.Windows.Forms.Label();
@@ -92,6 +88,13 @@ namespace Eduplan
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.VideoButton = new ePOSOne.btnProduct.Button_WOC();
+            this.BathmoiButton = new ePOSOne.btnProduct.Button_WOC();
+            this.DiagonismataButton = new ePOSOne.btnProduct.Button_WOC();
+            this.LessonButton = new ePOSOne.btnProduct.Button_WOC();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.BasicPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.TopPanel.SuspendLayout();
@@ -128,96 +131,8 @@ namespace Eduplan
             this.BasicPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.BasicPanel.Location = new System.Drawing.Point(0, 0);
             this.BasicPanel.Name = "BasicPanel";
-            this.BasicPanel.Size = new System.Drawing.Size(266, 754);
+            this.BasicPanel.Size = new System.Drawing.Size(266, 776);
             this.BasicPanel.TabIndex = 0;
-            // 
-            // VideoButton
-            // 
-            this.VideoButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VideoButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VideoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.Location = new System.Drawing.Point(6, 206);
-            this.VideoButton.Name = "VideoButton";
-            this.VideoButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.VideoButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.VideoButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.VideoButton.Size = new System.Drawing.Size(260, 90);
-            this.VideoButton.TabIndex = 10;
-            this.VideoButton.Text = "Βίντεο εκμάθησεις";
-            this.VideoButton.TextColor = System.Drawing.Color.White;
-            this.VideoButton.UseVisualStyleBackColor = false;
-            this.VideoButton.Click += new System.EventHandler(this.VideoButton_Click);
-            // 
-            // BathmoiButton
-            // 
-            this.BathmoiButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BathmoiButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BathmoiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.Location = new System.Drawing.Point(6, 494);
-            this.BathmoiButton.Name = "BathmoiButton";
-            this.BathmoiButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.BathmoiButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BathmoiButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.BathmoiButton.Size = new System.Drawing.Size(260, 90);
-            this.BathmoiButton.TabIndex = 9;
-            this.BathmoiButton.Text = "Οι Βαθμοί μου";
-            this.BathmoiButton.TextColor = System.Drawing.Color.White;
-            this.BathmoiButton.UseVisualStyleBackColor = false;
-            this.BathmoiButton.Click += new System.EventHandler(this.BathmoiButton_Click);
-            // 
-            // DiagonismataButton
-            // 
-            this.DiagonismataButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DiagonismataButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DiagonismataButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.Location = new System.Drawing.Point(6, 398);
-            this.DiagonismataButton.Name = "DiagonismataButton";
-            this.DiagonismataButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.DiagonismataButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DiagonismataButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.DiagonismataButton.Size = new System.Drawing.Size(260, 90);
-            this.DiagonismataButton.TabIndex = 8;
-            this.DiagonismataButton.Text = "Διαγωνίσματα";
-            this.DiagonismataButton.TextColor = System.Drawing.Color.White;
-            this.DiagonismataButton.UseVisualStyleBackColor = false;
-            this.DiagonismataButton.Click += new System.EventHandler(this.DiagonismataButton_Click);
-            // 
-            // LessonButton
-            // 
-            this.LessonButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LessonButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LessonButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.Location = new System.Drawing.Point(6, 302);
-            this.LessonButton.Name = "LessonButton";
-            this.LessonButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
-            this.LessonButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LessonButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.LessonButton.Size = new System.Drawing.Size(260, 90);
-            this.LessonButton.TabIndex = 7;
-            this.LessonButton.Text = "Κεφάλαια";
-            this.LessonButton.TextColor = System.Drawing.Color.White;
-            this.LessonButton.UseVisualStyleBackColor = false;
-            this.LessonButton.Click += new System.EventHandler(this.LessonButton_Click);
             // 
             // panel1
             // 
@@ -261,7 +176,7 @@ namespace Eduplan
             this.TopPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.TopPanel.Location = new System.Drawing.Point(266, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1159, 79);
+            this.TopPanel.Size = new System.Drawing.Size(1177, 79);
             this.TopPanel.TabIndex = 1;
             // 
             // flowLayoutPanel
@@ -273,11 +188,12 @@ namespace Eduplan
             this.flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel.Location = new System.Drawing.Point(266, 79);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(1159, 675);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(1177, 697);
             this.flowLayoutPanel.TabIndex = 2;
             // 
             // pythonPanel
             // 
+            this.pythonPanel.Controls.Add(this.label31);
             this.pythonPanel.Controls.Add(this.pictureBox12);
             this.pythonPanel.Controls.Add(this.pictureBox11);
             this.pythonPanel.Controls.Add(this.pictureBox10);
@@ -312,7 +228,7 @@ namespace Eduplan
             this.pythonPanel.Controls.Add(this.label1);
             this.pythonPanel.Location = new System.Drawing.Point(3, 3);
             this.pythonPanel.Name = "pythonPanel";
-            this.pythonPanel.Size = new System.Drawing.Size(1105, 8585);
+            this.pythonPanel.Size = new System.Drawing.Size(1127, 8585);
             this.pythonPanel.TabIndex = 0;
             this.pythonPanel.Visible = false;
             // 
@@ -747,6 +663,7 @@ namespace Eduplan
             // 
             // GradesPanel
             // 
+            this.GradesPanel.Controls.Add(this.label29);
             this.GradesPanel.Controls.Add(this.Test2label);
             this.GradesPanel.Controls.Add(this.Test3label);
             this.GradesPanel.Controls.Add(this.Test4label);
@@ -760,7 +677,7 @@ namespace Eduplan
             this.GradesPanel.Controls.Add(this.label18);
             this.GradesPanel.Location = new System.Drawing.Point(3, 8594);
             this.GradesPanel.Name = "GradesPanel";
-            this.GradesPanel.Size = new System.Drawing.Size(1106, 635);
+            this.GradesPanel.Size = new System.Drawing.Size(1127, 635);
             this.GradesPanel.TabIndex = 1;
             this.GradesPanel.Visible = false;
             // 
@@ -920,6 +837,7 @@ namespace Eduplan
             // 
             // panelVideo
             // 
+            this.panelVideo.Controls.Add(this.label30);
             this.panelVideo.Controls.Add(this.video3);
             this.panelVideo.Controls.Add(this.video2);
             this.panelVideo.Controls.Add(this.video1);
@@ -928,7 +846,7 @@ namespace Eduplan
             this.panelVideo.Controls.Add(this.label26);
             this.panelVideo.Location = new System.Drawing.Point(3, 9235);
             this.panelVideo.Name = "panelVideo";
-            this.panelVideo.Size = new System.Drawing.Size(1106, 2249);
+            this.panelVideo.Size = new System.Drawing.Size(1126, 2393);
             this.panelVideo.TabIndex = 2;
             // 
             // video3
@@ -1000,12 +918,130 @@ namespace Eduplan
             this.label26.TabIndex = 32;
             this.label26.Text = "Ξεκινώντας με την Python";
             // 
+            // VideoButton
+            // 
+            this.VideoButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VideoButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VideoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.Location = new System.Drawing.Point(6, 206);
+            this.VideoButton.Name = "VideoButton";
+            this.VideoButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.VideoButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.VideoButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.VideoButton.Size = new System.Drawing.Size(260, 90);
+            this.VideoButton.TabIndex = 10;
+            this.VideoButton.Text = "Βίντεο εκμάθησεις";
+            this.VideoButton.TextColor = System.Drawing.Color.White;
+            this.VideoButton.UseVisualStyleBackColor = false;
+            this.VideoButton.Click += new System.EventHandler(this.VideoButton_Click);
+            // 
+            // BathmoiButton
+            // 
+            this.BathmoiButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BathmoiButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BathmoiButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.Location = new System.Drawing.Point(6, 494);
+            this.BathmoiButton.Name = "BathmoiButton";
+            this.BathmoiButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.BathmoiButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BathmoiButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.BathmoiButton.Size = new System.Drawing.Size(260, 90);
+            this.BathmoiButton.TabIndex = 9;
+            this.BathmoiButton.Text = "Οι Βαθμοί μου";
+            this.BathmoiButton.TextColor = System.Drawing.Color.White;
+            this.BathmoiButton.UseVisualStyleBackColor = false;
+            this.BathmoiButton.Click += new System.EventHandler(this.BathmoiButton_Click);
+            // 
+            // DiagonismataButton
+            // 
+            this.DiagonismataButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DiagonismataButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiagonismataButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.Location = new System.Drawing.Point(6, 398);
+            this.DiagonismataButton.Name = "DiagonismataButton";
+            this.DiagonismataButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.DiagonismataButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DiagonismataButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.DiagonismataButton.Size = new System.Drawing.Size(260, 90);
+            this.DiagonismataButton.TabIndex = 8;
+            this.DiagonismataButton.Text = "Διαγωνίσματα";
+            this.DiagonismataButton.TextColor = System.Drawing.Color.White;
+            this.DiagonismataButton.UseVisualStyleBackColor = false;
+            this.DiagonismataButton.Click += new System.EventHandler(this.DiagonismataButton_Click);
+            // 
+            // LessonButton
+            // 
+            this.LessonButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LessonButton.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LessonButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.Location = new System.Drawing.Point(6, 302);
+            this.LessonButton.Name = "LessonButton";
+            this.LessonButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(75)))), ((int)(((byte)(196)))));
+            this.LessonButton.OnHoverButtonColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LessonButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.LessonButton.Size = new System.Drawing.Size(260, 90);
+            this.LessonButton.TabIndex = 7;
+            this.LessonButton.Text = "Κεφάλαια";
+            this.LessonButton.TextColor = System.Drawing.Color.White;
+            this.LessonButton.UseVisualStyleBackColor = false;
+            this.LessonButton.Click += new System.EventHandler(this.LessonButton_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.label30.Location = new System.Drawing.Point(1043, 2030);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(60, 20);
+            this.label30.TabIndex = 41;
+            this.label30.Text = "label30";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.label29.Location = new System.Drawing.Point(1043, 603);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(60, 20);
+            this.label29.TabIndex = 42;
+            this.label29.Text = "label29";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.label31.Location = new System.Drawing.Point(1042, 8553);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(60, 20);
+            this.label31.TabIndex = 42;
+            this.label31.Text = "label31";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1425, 754);
+            this.ClientSize = new System.Drawing.Size(1443, 776);
             this.Controls.Add(this.flowLayoutPanel);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.BasicPanel);
@@ -1111,6 +1147,9 @@ namespace Eduplan
         private AxWMPLib.AxWindowsMediaPlayer video3;
         private AxWMPLib.AxWindowsMediaPlayer video2;
         private AxWMPLib.AxWindowsMediaPlayer video1;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
     }
 }
 
