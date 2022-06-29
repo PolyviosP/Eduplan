@@ -41,7 +41,6 @@ namespace Eduplan
             this.TopPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.pythonPanel = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -264,7 +263,7 @@ namespace Eduplan
             this.TopPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.TopPanel.Location = new System.Drawing.Point(266, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1296, 79);
+            this.TopPanel.Size = new System.Drawing.Size(1256, 79);
             this.TopPanel.TabIndex = 1;
             // 
             // flowLayoutPanel
@@ -276,12 +275,11 @@ namespace Eduplan
             this.flowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel.Location = new System.Drawing.Point(266, 79);
             this.flowLayoutPanel.Name = "flowLayoutPanel";
-            this.flowLayoutPanel.Size = new System.Drawing.Size(1296, 746);
+            this.flowLayoutPanel.Size = new System.Drawing.Size(1256, 746);
             this.flowLayoutPanel.TabIndex = 2;
             // 
             // pythonPanel
             // 
-            this.pythonPanel.Controls.Add(this.label31);
             this.pythonPanel.Controls.Add(this.pictureBox12);
             this.pythonPanel.Controls.Add(this.pictureBox11);
             this.pythonPanel.Controls.Add(this.pictureBox10);
@@ -316,19 +314,9 @@ namespace Eduplan
             this.pythonPanel.Controls.Add(this.label1);
             this.pythonPanel.Location = new System.Drawing.Point(3, 3);
             this.pythonPanel.Name = "pythonPanel";
-            this.pythonPanel.Size = new System.Drawing.Size(1199, 8585);
+            this.pythonPanel.Size = new System.Drawing.Size(1194, 8585);
             this.pythonPanel.TabIndex = 0;
             this.pythonPanel.Visible = false;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.label31.Location = new System.Drawing.Point(1042, 8553);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(60, 20);
-            this.label31.TabIndex = 42;
-            this.label31.Text = "label31";
             // 
             // pictureBox12
             // 
@@ -775,7 +763,7 @@ namespace Eduplan
             this.GradesPanel.Controls.Add(this.label18);
             this.GradesPanel.Location = new System.Drawing.Point(3, 8594);
             this.GradesPanel.Name = "GradesPanel";
-            this.GradesPanel.Size = new System.Drawing.Size(1179, 635);
+            this.GradesPanel.Size = new System.Drawing.Size(1194, 635);
             this.GradesPanel.TabIndex = 1;
             this.GradesPanel.Visible = false;
             // 
@@ -954,7 +942,7 @@ namespace Eduplan
             this.panelVideo.Controls.Add(this.label26);
             this.panelVideo.Location = new System.Drawing.Point(3, 9235);
             this.panelVideo.Name = "panelVideo";
-            this.panelVideo.Size = new System.Drawing.Size(1179, 2249);
+            this.panelVideo.Size = new System.Drawing.Size(1197, 2122);
             this.panelVideo.TabIndex = 2;
             // 
             // label30
@@ -1041,7 +1029,7 @@ namespace Eduplan
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1562, 825);
+            this.ClientSize = new System.Drawing.Size(1522, 825);
             this.Controls.Add(this.flowLayoutPanel);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.BasicPanel);
@@ -1147,7 +1135,6 @@ namespace Eduplan
         private AxWMPLib.AxWindowsMediaPlayer video3;
         private AxWMPLib.AxWindowsMediaPlayer video2;
         private AxWMPLib.AxWindowsMediaPlayer video1;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
     }
