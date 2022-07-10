@@ -26,9 +26,9 @@ namespace Eduplan
                 MessageBox.Show("Η Εγγραφή σας ήταν επιτυχής.", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
             }
-            else if (PasswordBox.Text.Trim() == VerifyPasswordBox.Text.Trim())
+            else if (PasswordBox.Text.Trim() != VerifyPasswordBox.Text.Trim())
             {
-                MessageBox.Show("Ο Κωδικός πρόσβασης και ο επιβεβαίωσης Κωδικός πρόσβασης δεν είναι ίδιοι.", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ο Κωδικός πρόσβασης και ο επιβεβαίωσης Κωδικός πρόσβασης δεν είναι ίδιοι.", "Python+", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
